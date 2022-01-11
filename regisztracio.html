@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu-HU">
+  <head>
+    <title>Autóbérlő</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/stilus2.css" />
+    <link rel="stylesheet" href="css/regisztracio.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <div class="logo">
+            <img src="kepek/logo.png" alt="logo" />
+          </div>
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="#">Rólunk</a></li>
+          <li><a href="#">Feltételek</a></li>
+          <li>
+            <a href="#">Autóink <i class="fa fa-arrow-right"></i></a>
+            <div class="autokMenu">
+              <ul>
+                <li><a href="#">Összes</a></li>
+                <li><a href="#">Autók</a></li>
+                <li><a href="#">Motorok</a></li>
+                <li><a href="#">Furgonok</a></li>
+                <li><a href="#">Pickupok</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="gombok">
+        <button class="bejelentkezes">
+          <i class="fa fa-user"></i>Bejelentkezés
+        </button>
+        <button class="regisztracio">Regisztráció</button>
+      </div>
+      <div class="container">
+        <div class="cim">Regisztráció</div>
+        <br />
+        <div class="form">
+          <form action="">
+            <div class="inputfield">
+              <label>Név:</label>
+              <br />
+              <input type="text" class="firstNameInput" placeholder="First" />
+              <input type="text" class="lastNameInput" placeholder="Last" />
+            </div>
+            <div class="inputfield">
+              <label>Felhasználónév:</label>
+              <label>E-mail cím:</label>
+              <br />
+              <input type="text" class="felhNevInput" placeholder="Piroska66" />
+              <input
+                type="email"
+                class="emailInput"
+                placeholder="pirike66@gmail.com"
+              />
+            </div>
+
+            <div class="inputfield">
+              <label>Jelszó:</label>
+              <label>Jelszó újra:</label>
+            </div>
+            <div class="inputfield">
+              <input
+                type="password"
+                class="jelszo1Input"
+                placeholder="******"
+              />
+              <input
+                type="password"
+                class="jelszo2Input"
+                placeholder="******"
+              />
+            </div>
+            <div class="inputfield">
+              <label>Születési dátum:</label>
+              <label>Telefonszám:</label>
+            </div>
+            <div class="inputfield">
+              <input type="date" name="datum" class="datumInput" />
+              <input
+                type="text"
+                class="telInput"
+                placeholder="pl.: +36-20-345-6789"
+              />
+            </div>
+            <div class="inputfield">
+              <label>Cím:</label>
+              <br />
+              <input type="text" class="varosInput" placeholder="Város" />
+            </div>
+            <br />
+            <div class="inputfield">
+              <input type="text" class="megyeInput" placeholder="Megye" />
+              <input
+                type="text"
+                class="iranyitoszamInput"
+                placeholder="Irányítószám"
+              />
+            </div>
+            <br />
+            <div class="inputfield">
+              <input type="text" class="utcaInput" placeholder="Utca" />
+              <input type="text" class="hazszamInput" placeholder="Házszám" />
+            </div>
+            <br />
+            <div class="regisztracio">
+              <input type="submit" value="Regisztráció" class="regButton" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

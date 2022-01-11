@@ -10,7 +10,7 @@
 }
 
 main {
-  background-image: url("../kepek/car.jpg");
+  background-color: silver;
   background-size: cover;
 }
 
@@ -171,10 +171,6 @@ footer {
   flex: 1 1 7rem;
   display: flex;
   flex-direction: column;
-}
-
-.input-box p {
-  margin-top: 10px;
 }
 
 #idoEl {
