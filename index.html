@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu-HU">
+  <head>
+    <title>Autóbérlő</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/stilus2.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul>
+          <img src="kepek/logo.jpg" alt="logo" width="80%" />
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="#">Rólunk</a></li>
+          <li><a href="#">Kapcsolat</a></li>
+          <li><a href="#">Feltételek</a></li>
+        </ul>
+      </nav>
+      <div class="gombok">
+        <button class="bejelentkezes">
+          <i class="fa fa-user"></i>Bejelentkezés
+        </button>
+        <button class="regisztracio">Regisztráció</button>
+      </div>
+      <div class="container">
+        <h1>Keresd meg a számodra megfelelő autót!</h1>
+        <section class="keresoResz">
+          <div class="kereses">
+            <form action="">
+              <div class="input-box">
+                <select id="helyszinek" name="helyszinek">
+                  <option value="helyszin">-- Helyszín --</option>
+                  <option value="saab">Saab 95</option>
+                  <option value="mercedes">Mercedes SLK</option>
+                  <option value="audi">Audi TT</option>
+                </select>
+                <!-- <input
+                  type="search"
+                  id="lokacio"
+                  name="lokacio"
+                  placeholder="Helyszín"
+                />
+                -->
+              </div>
+              <div class="input-box">
+                <span>Elvitel dátuma</span>
+                <input type="date" id="elvitel" name="elvitel" />
+                <input
+                  style="margin-top: 10px"
+                  type="time"
+                  id="idoEl"
+                  name="idoEl"
+                />
+              </div>
+              <div class="input-box">
+                <span>Visszahozatal dátuma</span>
+                <input type="date" id="visszavitel" name="visszavitel" />
+                <input
+                  style="margin-top: 10px"
+                  type="time"
+                  id="idoVissza"
+                  name="idoVissza"
+                />
+              </div>
+              <input
+                type="submit"
+                name="kereses"
+                id="kereses"
+                value="Keresés"
+                class="btn"
+              />
+            </form>
+          </div>
+        </section>
+      </div>
+      <section class="hirekResz">
+        <div class="hirek">
+          <p>HÍRDETÉSEK HELYE BALBLABLALBALBLA</p>
+        </div>
+      </section>
+      <footer>FOOTER BABLABLALBAL</footer>
+    </main>
+  </body>
+</html>

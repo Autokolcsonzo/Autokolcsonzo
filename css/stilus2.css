@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  background-image: url("../kepek/car.jpg");
+  background-size: cover;
+}
+
+body {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* NAVIGÁCIÓ */
+
+nav {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  width: 200px;
+
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+nav li {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+nav a {
+  padding: 10px 20px;
+  font-style: italic;
+  color: #464646;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  display: block;
+  float: left;
+}
+
+nav a:hover {
+  text-decoration: 2px underline rgba(14, 14, 226, 0.788);
+}
+
+/* GOMBOK */
+button i {
+  margin-right: 5px;
+}
+
+.gombok {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bejelentkezes {
+  padding: 8px;
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(15, 15, 172);
+  margin-right: 15px;
+}
+
+.regisztracio {
+  padding: 8px;
+  width: 105px;
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(15, 15, 172);
+}
+
+.container {
+  padding: 16px;
+  margin-left: 200px;
+}
+
+.hirekResz {
+  margin-left: 200px;
+}
+
+section {
+  padding: 50px 100px;
+}
+
+.hirek {
+  padding: 10px;
+}
+
+footer {
+  margin-left: 200px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(224, 221, 221);
+}
+
+/* KERESŐMEZŐ */
+.kereses form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  /*   position: absolute;*/
+  /*padding: 20px;*/
+}
+
+.input-box {
+  flex: 1 1 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box p {
+  margin-top: 10px;
+}
+
+#idoEl {
+  width: 90px;
+}
+
+#idoVissza {
+  width: 90px;
+}
+
+.input-box input,
+select {
+  padding: 7px;
+  font-size: 15px;
+  border: none;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.kereses form .btn {
+  /*flex: 0 1 7rem;*/
+  padding: 10px 34px;
+  border: none;
+  /* border-radius: 0.5rem; */
+  font-size: 15px;
+  background: rgba(15, 15, 172, 0.699);
+  color: white;
+}
+
+.kereses form .btn:hover {
+  background: #cccccc;
+}
