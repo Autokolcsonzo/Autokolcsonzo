@@ -35,7 +35,6 @@ nav {
   background-color: white;
   border: 1px solid black;
   width: 200px;
-
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -148,13 +147,6 @@ section {
 
 .hirek {
   padding: 10px;
-}
-
-footer {
-  margin-left: 200px;
-  padding: 10px;
-  text-align: center;
-  background-color: rgb(224, 221, 221);
 }
 
 /* KERESŐMEZŐ */
