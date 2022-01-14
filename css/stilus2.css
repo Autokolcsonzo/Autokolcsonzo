@@ -27,7 +27,7 @@
 /* NAVIGÁCIÓ */
 
 .logo img {
-  width: 50%;
+  width: 90%;
   height: auto;
 }
 
@@ -38,6 +38,7 @@ nav {
 }
 nav ul{
   position: fixed;
+  width: 200px;
 }
 nav ul li {
   margin: 20px; 
