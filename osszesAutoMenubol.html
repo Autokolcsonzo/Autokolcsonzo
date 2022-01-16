@@ -41,7 +41,7 @@
           <a href="#">Járműveink <i class="fa fa-arrow-right"></i></a>
           <div class="autokMenu">
             <ul>
-              <li><a href="osszesAutoMenubol.html">Összes</a></li>
+              <li><a href="#">Összes</a></li>
               <li><a href="#">Autók</a></li>
               <li><a href="#">Motorok</a></li>
               <li><a href="#">Furgonok</a></li>
@@ -88,7 +88,7 @@
     <div class="autoKereso"> -->
 
       <!-- főoldali autókereső form -->
-      <div class="kereses">
+  <!--     <div class="kereses">
         <form action="">
           <div class="input-box">
             <span>Válassz helyszíneink közül</span>
@@ -100,7 +100,7 @@
             </select>
             <!--  <br><br><br> -->
 
-          </div>
+       <!--   </div>
           <div class="input-box">
             <span>Elvitel dátuma</span>
             <input type="date" id="elvitel" name="elvitel" />
@@ -115,7 +115,7 @@
           </div>
           <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn" />
         </form>
-      </div>
+      </div> -->
 
       <!--     </div>
     </div> -->
@@ -124,67 +124,187 @@
 
     <!-- felhasználóknak segítség/információ a foglaláshoz -->
     <div id="primary_content">
-      <div class="fooldalInfo">
-        <div class="infoHelyszin">
-          <img src="kepek/location.png" alt="" />
-          <h3>Válassz helyszínt!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper,
-            arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
+       <div class="fooldalInfo">
+        <form class="autokRendezes">
+                    <div>
+                        <label for="autoKategoria">Kategória</label>
+                        <select name="autoKategoria" id="autoKategoria">
+                            <option value>Összes kategória</option>
+                            <option value="compact">Compact</option>
+                            <option value="economy">Economy</option>
+                            <option value="luxus">Luxus</option>
+                            <option value="mini">Mini</option>
+                            <option value="premium">Premium</option>
+                            <option value="standard">Standard</option>
+                        </select>
+                    </div>
 
+                    <div>
+                        <label for="autoKarosszeria">Karosszéria</label>
+                        <select name="autoKarosszeria" id="autoKarosszeria">
+                            <option value>Összes karosszéria</option>
+                            <option value="2-3ajto">2-3 ajtós</option>
+                            <option value="4-5ajto">4-5 ajtós</option>
+                            <option value="kabrio">Kabrió</option>
+                            <option value="kombi">Kombi</option>
+                            <option value="teherauto">Teherautó</option>
+                            <option value="egyteru">Egyterű</option>
+                        </select>
+                    </div>
 
-        </div>
-        <div class="infoDatum">
-          <img src="kepek/date.png" alt="" />
-          <h3>Tűzd ki a dátumot!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper,
-            arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
-
-        </div>
-
-        <div class="infoAuto">
-          <img src="kepek/perfectcar.png" alt="" />
-          <h3>Foglald le a tökéletes autót!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper,
-            arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
-
-        </div>
-
+                    <div>
+                        <label for="autoValto">Váltó</label>
+                        <select name="autoValto" id="autoValto">
+                            <option value>Összes váltó</option>
+                            <option value="automata">Autómata</option>
+                            <option value="manualis">Manuális</option>
+                        </select>
+                    </div>
+<div>
+                    <button type="submit" class="szuresGomb">Szűrés</button>
+</div>
+        </form>
 
       </div>
 
-      <!-- Hírek a főoldalon -->
+      <!-- Összes autó -->
 
       <div class="hirekResz">
-
-
-        <h2 id="hirekCim">Híreink</h2>
-
-
+        <h2 id="hirekCim">Összes autó</h2>
         <div class="hirek">
 
-          <div class="placeholder_item">
-
+        <div class="placeholder_item2">
+            <div class="tartalom">
+            <img src="kepek/probaauto.jpg" alt="" class="kep" />
+            <h3 class="termeknev">Ford Fiesta</h3>
+            <p class="leiras">
+            Akár havi 123.000 Ft-tól.
+          </p>
           </div>
-          <div class="placeholder_item">
-
+          <div class="adatok">
+            <div>
+                <span>Karosszéria</span>
+                <span>4-5 ajtós</span>
+            </div>
+            <div>
+                <span>Váltó</span>
+                <span>Manuális</span>
+            </div>
+            <div>
+                <span>Utasok</span>
+                <span>4 utas</span>
+            </div>
+            <div>
+                <span>Csomagok</span>
+                <span>2 csomag</span>
+            </div>
           </div>
-          <div class="placeholder_item">
-
+          <div class="autoListaGombok">
+            <button type="submit" class="lefoglalas">Lefoglalás</button>
+            <button type="submit" class="reszletek">Részletek</button>
           </div>
-          <div class="placeholder_item">
+        </div>
 
+        <div class="placeholder_item2">
+            <div class="tartalom">
+            <img src="kepek/probaauto.jpg" alt="" class="kep" />
+            <h3 class="termeknev">Ford Fiesta</h3>
+            <p class="leiras">
+            Akár havi 123.000 Ft-tól.
+          </p>
           </div>
+          <div class="adatok">
+            <div>
+                <span>Karosszéria</span>
+                <span>4-5 ajtós</span>
+            </div>
+            <div>
+                <span>Váltó</span>
+                <span>Manuális</span>
+            </div>
+            <div>
+                <span>Utasok</span>
+                <span>4 utas</span>
+            </div>
+            <div>
+                <span>Csomagok</span>
+                <span>2 csomag</span>
+            </div>
+          </div>
+          <div class="autoListaGombok">
+            <button type="submit" class="lefoglalas">Lefoglalás</button>
+            <button type="submit" class="reszletek">Részletek</button>
+          </div>
+        </div>
 
+        <div class="placeholder_item2">
+            <div class="tartalom">
+            <img src="kepek/probaauto.jpg" alt="" class="kep" />
+            <h3 class="termeknev">Ford Fiesta</h3>
+            <p class="leiras">
+            Akár havi 123.000 Ft-tól.
+          </p>
+          </div>
+          <div class="adatok">
+            <div>
+                <span>Karosszéria</span>
+                <span>4-5 ajtós</span>
+            </div>
+            <div>
+                <span>Váltó</span>
+                <span>Manuális</span>
+            </div>
+            <div>
+                <span>Utasok</span>
+                <span>4 utas</span>
+            </div>
+            <div>
+                <span>Csomagok</span>
+                <span>2 csomag</span>
+            </div>
+          </div>
+          <div class="autoListaGombok">
+            <button type="submit" class="lefoglalas">Lefoglalás</button>
+            <button type="submit" class="reszletek">Részletek</button>
+          </div>
+        </div>
+
+        <div class="placeholder_item2">
+            <div class="tartalom">
+            <img src="kepek/probaauto.jpg" alt="" class="kep" />
+            <h3 class="termeknev">Ford Fiesta</h3>
+            <p class="leiras">
+            Akár havi 123.000 Ft-tól.
+          </p>
+          </div>
+          <div class="adatok">
+            <div>
+                <span>Karosszéria</span>
+                <span>4-5 ajtós</span>
+            </div>
+            <div>
+                <span>Váltó</span>
+                <span>Manuális</span>
+            </div>
+            <div>
+                <span>Utasok</span>
+                <span>4 utas</span>
+            </div>
+            <div>
+                <span>Csomagok</span>
+                <span>2 csomag</span>
+            </div>
+          </div>
+          <div class="autoListaGombok">
+            <button type="submit" class="lefoglalas">Lefoglalás</button>
+            <button type="submit" class="reszletek">Részletek</button>
+          </div>
+        </div>
 
 
         </div>
       </div>
 
-      <!-- Kiemelt ajánlatok a főoldalon -->
-
-      <div class="kiemelt ajánlatok">
-
-      </div>
     </div>
     <!-- Footer -->
     <footer>
