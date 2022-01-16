@@ -1,0 +1,52 @@
+.logo img {
+    width: 90%;
+    height: auto;
+  }
+  nav {
+    padding: 10px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  nav ul {
+    position: fixed;
+    width: 200px;
+  }
+  nav ul li {
+    margin: 20px;
+    font-style: italic;
+    color: #464646;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  nav ul li a {
+    padding: 20px;
+    font-size: 17px;
+  }
+  
+  nav a:hover {
+    text-decoration: 2px underline rgba(14, 14, 226, 0.788);
+  }
+  
+  .autokMenu {
+    display: none;
+    top: 50%;
+    left: 22%; /*nehezen lehet rákattintani a lenyíló menükre*/
+    color: black;
+  }
+  .autokMenu a {
+    font-size: 15px;
+  }
+  
+  .autokMenu li {
+    font-style: italic;
+    color: #464646;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  nav ul li:hover .autokMenu {
+    display: block;
+  }
+  
+  .autokMenu li:hover {
+    text-decoration: 2px underline #17446b;
+  }
