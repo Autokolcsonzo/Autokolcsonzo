@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav maincontent"
+    "sidenav maincontent"
+    "sidenav maincontent"
+    "sidenav maincontent"
+    "footer footer";
+  background-color: #e0e4e7;
+  background-size: cover;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.header {
+  margin: 5px;
+  
+}
+.header {
+  grid-area: header;
+}
+
+.placeholder_item {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(158, 157, 157);
+  margin: 30px;
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* NAVIGÁCIÓ */
+
+.logo img {
+  width: 90%;
+  height: auto;
+}
+
+nav {
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+nav ul {
+  position: fixed;
+  width: 200px;
+}
+nav ul li {
+  margin: 20px;
+  font-style: italic;
+  color: #464646;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul li a {
+  padding: 20px;
+  font-size: 17px;
+}
+
+nav a:hover {
+  text-decoration: 2px underline rgba(14, 14, 226, 0.788);
+}
+
+.autokMenu {
+  display: none;
+  top: 50%;
+  left: 22%; /*nehezen lehet rákattintani a lenyíló menükre*/
+  color: black;
+}
+
+.fa {
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+  color: #464646;
+}
+
+/*.fa:hover {
+  -webkit-transform: rotateZ(90deg);
+  -moz-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+*/
+.autokMenu a {
+  font-size: 15px;
+}
+
+.autokMenu li {
+  font-style: italic;
+  color: #464646;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li:hover .autokMenu {
+  display: block;
+}
+
+.autokMenu li:hover {
+  text-decoration: 2px underline #17446b;
+}
+#upper_wrapp {
+  grid-area: header;
+}
+
+nav {
+  grid-area: sidenav;
+}
+footer {
+  grid-area: footer;
+}
+
+/*PLACEHOLDER'S <- Azok a nagy kék genyók és a fekete keretek.*/
