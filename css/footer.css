@@ -34,6 +34,7 @@ footer{
 }
 #tortenetunk dd{
     text-align: justify;
+    font-weight: 500;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 #footer_connections{
@@ -52,9 +53,11 @@ footer{
     opacity: 0.7;
 }
 #footer_lists dl dd{
+    
     margin-bottom: 7px;
 }
 #footer_lists dl a{
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
 }
 #payment_icon_txt{
@@ -68,6 +71,7 @@ footer{
     color: blue;
 }
 #helyszinek{
+    font-weight: 700;
     width: 100%;
     display: flex;
     justify-content: space-evenly;

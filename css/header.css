@@ -1,29 +1,31 @@
 @charset "utf-8";
 
 .hsor1 {
-  height: 300px;
+  height: 200px;
 }
 
 .hsor2 {
+  padding: 0% 3%;
   display: flex;
-  height: 100px;
+  justify-content: space-between;
+}
+.hsor2 img{
+  align-items: center;
 }
 
-#foglalasszoveg1 {
+#foglalasszoveg1,#foglalasszoveg2 {
   color: #17446b;
   font-family: "Teko", sans-serif;
-  font-size: 40px;
   -webkit-text-stroke: 1px #17446b;
   text-shadow: 0px 4px 4px #8a8484;
+  
+}
+#foglalasszoveg1{
+  font-size: 40px;
   letter-spacing: 2px;
 }
-
 #foglalasszoveg2 {
-  color: #17446b;
-  font-family: "Teko", sans-serif;
   font-size: 50px;
-  -webkit-text-stroke: 1px #17446b;
-  text-shadow: 0px 4px 4px #8a8484;
   letter-spacing: 0.5px;
 }
 
@@ -31,21 +33,28 @@
   background-image: url("../kepek/header1.png");
   background-repeat: no-repeat;
 }
-
+.headerSzoveg{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .headerSzoveg {
-  position: relative;
+  /*position: relative;
   top: 10px;
   right: 900px;
+  */
 }
 
 .headerkep {
-  position: relative;
+  /*position: relative;
   top: -230px;
   left: 600px;
+  */
 }
 
 #fokep {
-  height: 400px;
+  width: auto;
+  height: 250px;
 }
 button i {
   margin-right: 5px;
