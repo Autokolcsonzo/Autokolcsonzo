@@ -22,46 +22,73 @@
   <link rel="stylesheet" href="css/szerkezet.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/regisztracio.css" />
+  <link rel="stylesheet" href="css/fooldal.css" />
 </head>
-  <body>
-    <main>
-      <nav>
-        <ul>
-          <div class="logo">
-            <img src="kepek/logo.png" alt="logo" />
+
+<body>
+  <main>
+          <!-- Navigáció -->
+    <nav>
+      <ul>
+        <div class="logo">
+          <img src="kepek/logo.png" alt="logo" />
+        </div>
+        <li><a href="index.html">Kezdőlap</a></li>
+        <li><a href="#">Rólunk</a></li>
+        <li><a href="#">Feltételek</a></li>
+        <li>
+          <a href="#">Autóink <i class="fa fa-arrow-right"></i></a>
+          <div class="autokMenu">
+            <ul>
+              <li><a href="#">Összes</a></li>
+              <li><a href="#">Autók</a></li>
+              <li><a href="#">Motorok</a></li>
+              <li><a href="#">Furgonok</a></li>
+              <li><a href="#">Pickupok</a></li>
+            </ul>
           </div>
-          <li><a href="index.html">Kezdőlap</a></li>
-          <li><a href="#">Rólunk</a></li>
-          <li><a href="#">Feltételek</a></li>
-          <li>
-            <a href="#">Autóink <i class="fa fa-arrow-right"></i></a>
-            <div class="autokMenu">
-              <ul>
-                <li><a href="#">Összes</a></li>
-                <li><a href="#">Autók</a></li>
-                <li><a href="#">Motorok</a></li>
-                <li><a href="#">Furgonok</a></li>
-                <li><a href="#">Pickupok</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
+        </li>
+      </ul>
+    </nav>
+
+            <!--   Fejléc -->
+
+
+    <div class="header">
+     
+
+        <!-- headerben a bejelentkezés és regisztráció gombok -->
+     <div class="hsor1">
       <div class="gombok">
         <button class="bejelentkezes">
           <a href="bejelentkezes.html">
-            <i class="fa fa-user"></i>Bejelentkezés</a
-          >
+          <i class="fa fa-user"></i>Bejelentkezés</a>
         </button>
         <button class="regisztracio">
           <a href="regisztracio.html">Regisztráció</a>
         </button>
       </div>
-      <div class="container">
-        <div class="cim">Regisztráció</div>
-        <br />
-        <div class="form">
+    </div>
+
+          <!-- főszöveg és kis kép div-je -->
+    <div class="hsor2">
+            <!-- kis kép -->
+      <div class="headerkep">
+      
+        <img src="kepek/headerimg.png" id="fokep" alt="" />
+      
+      </div>
+
+            <!-- header-ben a főszöveg -->
+      <div class="headerSzoveg"><h1 id="foglalasszoveg1">Bejelentkezés</h1>
+
+      </div>
+   
+    </div>
+      
+          <!-- bejelentkezés form -->
+   <div class="container">
+          <div class="form">
           <form action="">
             <div class="inputfield">
               <label>Név:</label>
@@ -134,7 +161,94 @@
             </div>
           </form>
         </div>
-      </div>
-    </main>
-  </body>
+  </div>
+   <!-- bejelentkezés form VÉGE -->
+  
+
+    </div>
+
+            <!-- Footer -->
+    <footer>
+      <div id="footer_links">
+        <div id="footer_lists">
+          <div id="footer_logo">
+            <img src="kepek/logo.png" alt="logo" /><br><br>
+            <h6 id="payment_icon_txt">fizetési lehetőségek:</h6>
+            <div id="payment_icons">
+              <img src="kepek/credit-card-svgrepo-com.svg" alt="cardicon" />
+              <img src="kepek/cash1.svg" alt="cashicon" />
+              <img src="kepek/bitcoin-btc-logo.svg" alt="bitcoinIcon" />
+            </div>
+          </div>
+          <dl id="footer_list_1">
+            <dt>
+              <h3>Segítség</h3>
+            </dt><br>
+            <dd><a href="">Kapcsolat felvétel</a></dd>
+            <dd><a href="">Oldaltérkép</a></dd>
+            <dd><a href="">Helpdesk</a></dd>
+            <dd><a href="">FAQ</a></dd>
+          </dl>
+          <dl id="footer_list_2">
+            <dt>
+              <h3>Navigáció</h3>
+            </dt><br>
+            <dd><a href="">Kezdőlap</a></dd>
+            <dd><a href="">Autó keresés</a></dd>
+            <dd><a href="">foglalásaim</a></dd>
+            <dd><a href="">profilom</a></dd>
+          </dl>
+          <dl id="tortenetunk">
+            <dt>
+              <h3>Történetünk</h3>
+            </dt><br>
+            <dd>
+              <p>Válalatunk 2022-es fennállása óta biztosít minőségi és gyors autó kölcsönzést vásárlóinknak és ezt a jó
+                szokásunkat nem szeretnénk megváltoztatni. Vásárlóink mindíg elégedettek voltak mint árainkkal mint
+                szolgáltatásiankkal.</p>
+            </dd>
+          </dl>
+          <div id="footer_connections">
+            <div id="footer_icons">
+              <ul>
+                <li><a href=""><img src="kepek\3377042_gmail_logo_media_social_icon.svg" alt="gmail_icon"></a></li>
+                <li><a href=""><img src="kepek\5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt="whatsapp_icon"></a></li>
+                <li><a href=""><img src="kepek\5365678_fb_facebook_facebook logo_icon.svg" alt="facebook_icon"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="vonal1"></div>
+        <div id="helyszinek">
+          <ul>
+            <li>
+              <address>
+                <h4>Szeged</h4>4521 Kerge Jenő utca 83
+              </address>
+            </li>
+            <li><a class="telefon_Szam" href="tel:+36301088482">Hívás: +3630-108-84-82</a></li>
+          </ul>
+          <ul>
+            <li>
+              <address>
+                <h4>Budapest</h4>Mérnökutca 39
+              </address>
+            </li>
+            <li><a class="telefon_Szam" href="tel:+36304512356">Hívás: +3630-451-33-56</a></li>
+          </ul>
+          <ul>
+            <li>
+              <address>
+                <h4>Győr</h4>5731 Kelemen út 12
+              </address>
+            </li>
+            <li><a class="telefon_Szam" href="tel:06209623456">Hívás: 0620-962-34-56</a></li>
+          </ul>
+        </div>
+        <div class="vonal1"></div>
+        <h5 id="copyRight">@2022 Minden jog fenntartva</h5>
+    </footer>
+  </main>
+</body>
+
 </html>
