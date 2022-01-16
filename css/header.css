@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+
+.hsor1 {
+  height: 300px;
+}
+
+.hsor2 {
+  display: flex;
+  height: 100px;
+}
+
+#foglalasszoveg1 {
+  color: #17446b;
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  -webkit-text-stroke: 1px #17446b;
+  text-shadow: 0px 4px 4px #8a8484;
+  letter-spacing: 2px;
+}
+
+#foglalasszoveg2 {
+  color: #17446b;
+  font-family: "Teko", sans-serif;
+  font-size: 50px;
+  -webkit-text-stroke: 1px #17446b;
+  text-shadow: 0px 4px 4px #8a8484;
+  letter-spacing: 0.5px;
+}
+
+.header {
+  background-image: url("../kepek/header1.png");
+}
+
+.headerSzoveg {
+  position: relative;
+  top: 10px;
+  right: 900px;
+}
+
+.headerkep {
+  position: relative;
+  top: -230px;
+  left: 600px;
+}
+
+#fokep {
+  height: 400px;
+}
+button i {
+  margin-right: 5px;
+}
+
+.gombok {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bejelentkezes {
+  background-color: #e0e4e7;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 12px 16px;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  margin-right: 20px;
+  width: 200px;
+}
+
+.bejelentkezes:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.regisztracio {
+  background-color: #e0e4e7;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 12px 16px;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  margin-right: 20px;
+  width: 200px;
+}
+
+.regisztracio:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.kereses {
+  max-width: 1900px;
+  padding: 20px;
+
+  margin: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+.kereses form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-box {
+  flex: 1 1 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#idoEl {
+  width: 90px;
+}
+
+#idoVissza {
+  width: 90px;
+}
+
+.input-box input,
+select {
+  padding: 10px;
+  background: rgba(174, 189, 230, 0.75);
+  outline: 0;
+  border: 1px solid rgb(177, 177, 180);
+  height: 50px;
+}
+
+.kereses form .btn {
+  background-color: #e0e4e7;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 16px;
+  width: 200px;
+}
+
+.kereses form .btn:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}

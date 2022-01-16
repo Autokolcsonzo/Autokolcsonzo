@@ -2,23 +2,32 @@
 <html lang="hu-HU">
 
 <head>
-  <title>Autóbérlő</title>
+  <title>Dropmyride autókölcsönző</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+          <!-- Scriptek -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
+          /* Betűtípusok */
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Teko:wght@300&display=swap');
   </style>
+
+          <!-- Stílusok -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/stilus2.css" />
+  <link rel="stylesheet" href="css/szerkezet.css" />
+  <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/fooldal.css" />
 </head>
 
 <body>
   <main>
+          <!-- Navigáció -->
     <nav>
       <ul>
         <div class="logo">
@@ -41,7 +50,15 @@
         </li>
       </ul>
     </nav>
-    <div id="upper_wrapp">
+
+            <!--   Fejléc -->
+
+
+    <div class="header">
+     
+
+        <!-- headerben a bejelentkezés és regisztráció gombok -->
+     <div class="hsor1">
       <div class="gombok">
         <button class="bejelentkezes">
           <i class="fa fa-user"></i>Bejelentkezés
@@ -50,25 +67,40 @@
           <a href="regisztracio.html">Regisztráció</a>
         </button>
       </div>
-    <div class="container">
-      <h1>Keresd meg a számodra megfelelő autót!</h1>
-      <section class="keresoResz">
+    </div>
+
+          <!-- főszöveg és kis kép div-je -->
+    <div class="hsor2">
+            <!-- kis kép -->
+      <div class="headerkep">
+      
+        <img src="kepek/headerimg.png" id="fokep" alt="" />
+      
+      </div>
+
+            <!-- header-ben a főszöveg -->
+      <div class="headerSzoveg"><h1 id="foglalasszoveg1">Keresd meg a számodra megfelelő autót!</h1>
+        <h1 id="foglalasszoveg2">Kezdj bele a foglalásba!</h1>
+      
+      </div>
+   
+    </div>
+
+           <!-- autókeresés részletes keresés nélkül -->
+      <div class="hsor3">
+    <div class="autoKereso">
+      
+          <!-- főoldali autókereső form -->
         <div class="kereses">
           <form action="">
             <div class="input-box">
               <select id="helyszinek" name="helyszinek">
                 <option value="helyszin">-- Helyszín --</option>
-                <option value="saab">Saab 95</option>
-                <option value="mercedes">Mercedes SLK</option>
-                <option value="audi">Audi TT</option>
+                <option value="saab">Budapest Örs Vezér</option>
+                <option value="mercedes">Pécs</option>
+                <option value="audi">Szeged</option>
               </select>
-              <!-- <input
-                  type="search"
-                  id="lokacio"
-                  name="lokacio"
-                  placeholder="Helyszín"
-                />
-                -->
+     
             </div>
             <div class="input-box">
               <span>Elvitel dátuma</span>
@@ -83,11 +115,49 @@
             <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn" />
           </form>
         </div>
-      </section>
+    
     </div>
     </div>
-    <section class="hirekResz">
+    </div>
+    
+
+      <!-- felhasználóknak segítség/információ a foglaláshoz -->
+
+    <div class="fooldalInfo">
+      <div class="infoHelyszin">
+        <img src="kepek/location.png"  alt="" />
+        <h3>Válassz helyszínt!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper, arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
+
+
+      </div>
+      <div class="infoDatum">
+        <img src="kepek/date.png"  alt="" />
+        <h3>Tűzd ki a dátumot!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper, arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
+
+      </div>
+
+      <div class="infoAuto">
+        <img src="kepek/perfectcar.png"  alt="" />
+        <h3>Foglald le a tökéletes autót!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper, arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
+
+      </div>
+
+
+    </div>
+
+                <!-- Hírek a főoldalon -->
+
+                <div class="hirekResz">
+
+                
+                  <h2 id="hirekCim" >Híreink</h2>
+                     
+    
       <div class="hirek">
+        
         <div class="placeholder_item">
 
         </div>
@@ -97,28 +167,20 @@
         <div class="placeholder_item">
 
         </div>
-        <div class="placeholder_item">
-
-        </div>
-        <div class="placeholder_item">
-
-        </div>
-        <div class="placeholder_item">
-
-        </div>
-        <div class="placeholder_item">
-
-        </div>
-        <div class="placeholder_item">
-
-        </div>
-        <div class="placeholder_item">
-
-        </div>
+      
+        
         
         
       </div>
-    </section>
+    </div>
+
+              <!-- Kiemelt ajánlatok a főoldalon -->
+
+      <div class="kiemelt ajánlatok">
+        
+      </div>
+
+            <!-- Footer -->
     <footer>
       <div id="footer_links">
         <div id="footer_lists">
