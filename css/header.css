@@ -29,6 +29,7 @@
 
 .header {
   background-image: url("../kepek/header1.png");
+  background-repeat: no-repeat;
 }
 
 .headerSzoveg {
