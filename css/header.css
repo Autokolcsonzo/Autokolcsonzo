@@ -139,7 +139,7 @@ button i {
 
 .input-box2 input {
   padding: 10px;
-  background: rgba(174, 189, 230, 0.623);
+  background: rgba(192, 204, 240, 0.37);
   border: 1px solid rgb(177, 177, 180);
   height: 50px;
   outline: 0; /* nem lesz kerete mikor belekattintunk */
@@ -156,7 +156,7 @@ button i {
 .input-box input,
 select {
   padding: 10px;
-  background: rgba(174, 189, 230, 0.623);
+  background: rgba(192, 204, 240, 0.37);
   border: 1px solid rgb(177, 177, 180);
   height: 50px;
   outline: 0; /* nem lesz kerete mikor belekattintunk */
