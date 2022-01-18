@@ -16,6 +16,7 @@ main {
   grid-template-columns: 200px auto;
   grid-template-areas:
     "sidenav header"
+    "sidenav kereses"
     "sidenav primarycontent"
     "sidenav primarycontent"
     "sidenav primarycontent"
@@ -37,6 +38,9 @@ nav {
 }
 footer {
   grid-area: footer;
+}
+.kereses{
+  grid-area: kereses;
 }
 
 /*GRID ITEM STYLE*/

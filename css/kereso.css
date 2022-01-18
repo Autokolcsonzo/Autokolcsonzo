@@ -1,0 +1,104 @@
+.kereses {
+    max-width: 1900px;
+    padding: 20px;
+    margin: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 15px;
+  }
+  
+  .kereses form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .input-box {
+    flex: 1 1 27rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-box2 {
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .input-box2 input {
+    padding: 10px;
+    background: rgba(192, 204, 240, 0.37);
+    border: 1px solid rgb(177, 177, 180);
+    height: 50px;
+    outline: 0; /* nem lesz kerete mikor belekattintunk */
+  }
+  
+  #idoEl {
+    width: 90px;
+  }
+  
+  #idoVissza {
+    width: 90px;
+  }
+  
+  .input-box input,
+  select {
+    padding: 10px;
+    background: rgba(192, 204, 240, 0.37);
+    border: 1px solid rgb(177, 177, 180);
+    height: 50px;
+    outline: 0; /* nem lesz kerete mikor belekattintunk */
+  }
+  
+  .kereses form .btn {
+    background-color: #e0e4e7;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 2px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+      rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 6px 16px;
+    width: 200px;
+  }
+  
+  .kereses form .btn:hover {
+    background-color: #b1c5ee;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  #rejtett_kereső{
+      margin: 3%;
+      display: flex;
+  }
+  #kereso_items{
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+  }
+  #kereso_items section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start
+  }
+  #kereso_items section input{
+      margin-right: 20px;
+  }
+  #kerso_dropdown{
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+  }
+  #kerso_dropdown section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #kerso_dropdown section input{
+    margin-bottom: 20px;
+  }
