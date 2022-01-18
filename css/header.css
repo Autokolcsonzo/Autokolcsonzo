@@ -38,19 +38,19 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-.headerSzoveg {
-  /*position: relative;
+/* .headerSzoveg {
+  position: relative;
   top: 10px;
   right: 900px;
-  */
-}
+ 
+} */
 
-.headerkep {
-  /*position: relative;
+/* .headerkep {
+  position: relative;
   top: -230px;
   left: 600px;
-  */
-}
+ 
+} */
 
 #fokep {
   width: auto;
