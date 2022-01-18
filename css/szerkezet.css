@@ -44,21 +44,10 @@ footer {
 .header {
   margin: 5px;
 }
-/*PLACEHOLDER'S <- Azok a nagy kék genyók és a fekete keretek.*/
-.placeholder_item {
-  width: 300px;
-  height: 400px;
-  background-color: rgb(158, 157, 157);
-  margin: 30px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  padding: 1rem;
-}
 
 .placeholder_item2 {
   background: rgb(241, 239, 239);
-  height: 100%;
+  /*   height: 100%; */
   text-align: center;
   border: 1px solid #ddd;
   padding: 1.5rem;
@@ -107,20 +96,34 @@ p {
 .autoListaGombok .lefoglalas,
 .reszletek {
   align-items: center;
-  background-color: #ededed;
+  background-color: #b9c4d157;
   color: #231f20 !important;
-  display: inline-flex;
   font-size: 1rem;
   font-weight: 700;
   height: 2.5em;
-  justify-content: center;
   padding: 0 0.8em;
-  text-decoration: none;
-  transition: background-color 200ms ease, opacity 200ms ease;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-  white-space: nowrap;
+}
+
+.autokRendezes {
+  display: flex;
+}
+
+.kategoriaLabel,
+.karosszeriaLabel,
+.valtoLabel {
+  font-size: 15pt;
+  padding: 10px;
+}
+
+.szuresGomb {
+  align-items: center;
+  background-color: #b9c4d120;
+  height: 2.5em;
+  padding: 0 2em;
+}
+
+#autoKategoria,
+#autoKarosszeria,
+#autoValto {
+  font-size: 12pt;
 }
