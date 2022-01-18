@@ -55,21 +55,7 @@ label {
   font-size: 20px;
 }
 
-/* .firstNameInput,
-.lastNameInput,
-.felhNevInput,
-.emailInput,
-.jelszo1Input,
-.jelszo2Input,
-.datumInput,
-.telInput,
-.megyeInput,
-.iranyitoszamInput,
-.utcaInput,
-.hazszamInput {
-  width: 30%;
+.emailLabel,
+.felhLabel {
+  display: flex;
 }
-
-.varosInput {
-  width: 60.6%;
-} */

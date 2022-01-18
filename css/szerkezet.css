@@ -45,6 +45,8 @@ footer {
   margin: 5px;
 }
 
+/* Járműveink menüpont */
+
 .placeholder_item2 {
   background: rgb(241, 239, 239);
   /*   height: 100%; */
@@ -106,6 +108,12 @@ p {
 
 .autokRendezes {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .kategoriaLabel,
