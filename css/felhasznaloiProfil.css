@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+.fadatokTable {
+  width: 50%;
+}
+
+.fprofil {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilkep {
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  -khtml-box-shadow: 10px 10px 5px #ccc;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 239, 239);
+}
+
+.profilkep img {
+  max-width: 300px;
+  max-height: 300px;
+  border: 2px solid #17446b;
+}
+
+.fadatok {
+  margin-left: 50px;
+  background-color: rgb(241, 239, 239);
+  border: 1px solid #17446b;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.fadatokTable td {
+  text-align: left;
+  padding: 1em;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+tr :nth-child(1) {
+  color: #17446b;
+}
+
+tr :nth-child(2) {
+  font-style: italic;
+}
+
+#fkepMod {
+  margin: 10px;
+  background-color: #e0e4e7;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 16px;
+  width: 200px;
+}
+
+#fkepMod:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+#fadatokMod {
+  margin: 10px;
+  background-color: #e0e4e7;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 16px;
+  width: 200px;
+}
+
+#fadatokMod:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
