@@ -69,36 +69,121 @@
     text-decoration: none;
     transition-duration: 0.2s;
   }
-  #rejtett_kereső{
-      margin: 3%;
-      display: flex;
-  }
-  #kereso_items{
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-  }
-  #kereso_items section{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start
-  }
-  #kereso_items section input{
-      margin-right: 20px;
-  }
-  #kerso_dropdown{
-      width: fit-content;
-      display: flex;
-      flex-direction: column;
-  }
-  #kerso_dropdown section{
+  
+
+
+
+  /*--------------Lenyíló kereső-------------------------*/
+
+  
+
+#dropdown_kereso{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#checkboxs{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#checkboxs section{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 0.5rem;
+}
+#checkboxs section label{
+  margin-bottom: 0.5rem;
+}
+#modell_parameter_kereso{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+#modell_parameter_kereso section{
+  margin-right: 1rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+#jarmu_parameter_kereso{
+  display: flex;
+}
+#check_wrapper-1,#check_wrapper-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  margin-right: 2rem;
+}
+
+#mint,#maxt{
+  display: flex;
+  flex-direction: row;
+}
+#mint{
+  margin-right: 10px;
+}
+#min,#max{
+  width: 80px;
+}
+#tolig{
+  display: flex;
+}
+#minmax-wrapp{
+  display: flex;
+  flex-direction: column;
+}
+#minmaxLable{
+  display: flex;
+  justify-content: space-around;
+}
+#ulesek{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+#ulesek input{
+  width: 50px;
+}
+#modell_evjarat{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+#evjarat{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+#checkboxs,#modell_parameter_kereso,#ulesek,#minmax-wrapp{
+  margin: 1% 1%;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
   }
-  #kerso_dropdown section input{
-    margin-bottom: 20px;
+  to { 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
+}
+
+
+
