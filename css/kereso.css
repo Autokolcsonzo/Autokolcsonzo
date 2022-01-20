@@ -1,83 +1,78 @@
 .kereses {
-    max-width: 1900px;
-    padding: 20px;
-    margin: 10px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 15px;
-  }
-  
-  .kereses form {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .input-box {
-    flex: 1 1 27rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input-box2 {
-    flex: 1 1 7rem;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .input-box2 input {
-    padding: 10px;
-    background: rgba(192, 204, 240, 0.37);
-    border: 1px solid rgb(177, 177, 180);
-    height: 50px;
-    outline: 0; /* nem lesz kerete mikor belekattintunk */
-  }
-  
-  #idoEl {
-    width: 90px;
-  }
-  
-  #idoVissza {
-    width: 90px;
-  }
-  
-  .input-box input,
-  select {
-    padding: 10px;
-    background: rgba(192, 204, 240, 0.37);
-    border: 1px solid rgb(177, 177, 180);
-    height: 50px;
-    outline: 0; /* nem lesz kerete mikor belekattintunk */
-  }
-  
-  .kereses form .btn {
-    background-color: #e0e4e7;
-    border: 1px solid rgba(27, 31, 35, 0.15);
-    border-radius: 2px;
-    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
-      rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    padding: 6px 16px;
-    width: 200px;
-  }
-  
-  .kereses form .btn:hover {
-    background-color: #b1c5ee;
-    text-decoration: none;
-    transition-duration: 0.2s;
-  }
-  
+  max-width: 1900px;
+  padding: 20px;
+  margin: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
 
+.kereses form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
 
+.input-box {
+  flex: 1 1 27rem;
+  display: flex;
+  flex-direction: column;
+}
 
-  /*--------------Lenyíló kereső-------------------------*/
+.input-box2 {
+  flex: 1 1 7rem;
+  display: flex;
+  flex-direction: row;
+}
 
-  
+.input-box2 input {
+  padding: 10px;
+  background: rgba(192, 204, 240, 0.37);
+  border: 1px solid rgb(177, 177, 180);
+  height: 50px;
+  outline: 0; /* nem lesz kerete mikor belekattintunk */
+}
 
-#dropdown_kereso{
+#idoEl {
+  width: 90px;
+}
+
+#idoVissza {
+  width: 90px;
+}
+
+.input-box input,
+select {
+  padding: 10px;
+  background: rgba(192, 204, 240, 0.37);
+  border: 1px solid rgb(177, 177, 180);
+  height: 50px;
+  outline: 0; /* nem lesz kerete mikor belekattintunk */
+}
+
+.kereses form .btn {
+  background-color: #e0e4e7;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px 16px;
+  width: 200px;
+}
+
+.kereses form .btn:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+/*--------------Lenyíló kereső-------------------------*/
+
+#dropdown_kereso {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -85,38 +80,40 @@
   align-content: center;
   margin-top: 50px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  display: none; /* ez majd a további oldalon lesz */
 }
-#checkboxs{
+#checkboxs {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-#checkboxs section{
+#checkboxs section {
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 0.5rem;
 }
-#checkboxs section label{
+#checkboxs section label {
   margin-bottom: 0.5rem;
 }
-#modell_parameter_kereso{
+#modell_parameter_kereso {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   flex-wrap: nowrap;
 }
-#modell_parameter_kereso section{
+#modell_parameter_kereso section {
   margin-right: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
-#jarmu_parameter_kereso{
+#jarmu_parameter_kereso {
   display: flex;
 }
-#check_wrapper-1,#check_wrapper-2{
+#check_wrapper-1,
+#check_wrapper-2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -125,52 +122,56 @@
   margin-right: 2rem;
 }
 
-#mint,#maxt{
+#mint,
+#maxt {
   display: flex;
   flex-direction: row;
 }
-#mint{
+#mint {
   margin-right: 10px;
 }
-#min,#max{
+#min,
+#max {
   width: 80px;
 }
-#tolig{
+#tolig {
   display: flex;
 }
-#minmax-wrapp{
+#minmax-wrapp {
   display: flex;
   flex-direction: column;
 }
-#minmaxLable{
+#minmaxLable {
   display: flex;
   justify-content: space-around;
 }
-#ulesek{
+#ulesek {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
 }
-#ulesek input{
+#ulesek input {
   width: 50px;
 }
-#modell_evjarat{
+#modell_evjarat {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: flex-start;
 }
-#evjarat{
+#evjarat {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
-#checkboxs,#modell_parameter_kereso,#ulesek,#minmax-wrapp{
+#checkboxs,
+#modell_parameter_kereso,
+#ulesek,
+#minmax-wrapp {
   margin: 1% 1%;
 }
-
 
 @keyframes fade {
   from {
@@ -178,12 +179,9 @@
     visibility: hidden;
     transform: translateY(10px);
   }
-  to { 
+  to {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
   }
 }
-
-
-
