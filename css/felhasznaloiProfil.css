@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 .fadatokTable {
-  width: 50%;
+  width: 100%;
+   border-collapse: collapse; 
 }
 
 .fprofil {
@@ -26,19 +27,16 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  background-color: rgb(241, 239, 239);
+background-color: white;
 }
 
 .profilkep img {
   max-width: 300px;
   max-height: 300px;
-  border: 2px solid #17446b;
 }
 
 .fadatok {
   margin-left: 50px;
-  background-color: rgb(241, 239, 239);
-  border: 1px solid #17446b;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 50px;
   padding: 20px;
@@ -48,6 +46,7 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .fadatokTable td {
@@ -61,9 +60,13 @@ tr :nth-child(1) {
   color: #17446b;
 }
 
+tr :nth-child(3) {
+  color: #17446b;
+}
 tr :nth-child(2) {
   font-style: italic;
 }
+
 
 #fkepMod {
   margin: 10px;
@@ -77,6 +80,11 @@ tr :nth-child(2) {
   font-weight: 500;
   padding: 6px 16px;
   width: 200px;
+  border-radius: 5px;
+}
+
+#profkepFel{
+  display: none;
 }
 
 #fkepMod:hover {
@@ -97,6 +105,7 @@ tr :nth-child(2) {
   font-weight: 500;
   padding: 6px 16px;
   width: 200px;
+  border-radius: 5px;
 }
 
 #fadatokMod:hover {
@@ -104,3 +113,98 @@ tr :nth-child(2) {
   text-decoration: none;
   transition-duration: 0.2s;
 }
+
+.felhasznaloiModositas{
+display:flex;
+max-width: 700px;
+}
+
+.sor{
+  display:flex;
+    flex-direction:row;
+}
+
+
+.inputfield{
+  flex:1;
+  margin:10px;
+
+}
+
+.inputfield label{
+
+  color: #17446b;
+  font-weight: bolder;
+
+}
+
+.inputfield input{
+  padding: 10px;
+  background: white;
+  height: 40px;
+  border:none;
+  outline:0;
+  border-radius: 5px;
+}
+
+.form-header {
+  padding:15px 0;
+  border-bottom:1px solid #17446b;
+  font-family: "Teko", sans-serif;
+}
+
+.inputfield input::placeholder{
+  color:#17446b;
+}
+
+
+
+.form-header h3 {
+  font-size: 40px;
+  text-align:center;
+  color:#17446b;
+}
+
+#adatotMent{
+  margin: 10px;
+  background-color: #e0e4e7;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 16px;
+  width: 200px;
+  border-radius: 5px;
+
+}
+
+#adatotMent:hover{
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .sor{
+      flex-direction:column; 
+    }
+
+    .fadatok{
+      max-width: 600px;
+    }
+
+    .fadatokTable{
+      max-width: 500px;
+    }
+
+    .fadatokTable td{
+      padding:10px;
+    }
+}
+
