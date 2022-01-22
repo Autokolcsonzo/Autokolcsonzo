@@ -4,12 +4,14 @@
   margin: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
+  margin-bottom: 30px;
 }
 
 .kereses form {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   gap: 1rem;
 }
 
@@ -79,7 +81,6 @@ select {
   justify-content: center;
   align-content: center;
   margin-top: 50px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 #checkboxs {
   display: flex;
@@ -172,15 +173,98 @@ select {
   margin: 1% 1%;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
+
+.autoListaGombok {
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+  /*   position: absolute; */
+  width: 100%;
+}
+
+.autoListaGombok .lefoglalas,
+.reszletek {
+  align-items: center;
+  background-color: #b9c4d157;
+  color: #231f20 !important;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 2.5em;
+  padding: 0 0.8em;
+}
+
+.autokRendezes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.kategoriaLabel,
+.karosszeriaLabel,
+.valtoLabel {
+  font-size: 15pt;
+  padding: 10px;
+}
+
+.szuresGomb {
+  align-items: center;
+  background-color: #b9c4d120;
+  height: 2.5em;
+  padding: 0 2em;
+}
+
+#autoKategoria,
+#autoKarosszeria,
+#autoValto {
+  font-size: 12pt;
+}
+
+#keresesBtn{
+  margin: 10px;
+  padding: 10px 30px;
+}
+#keresesBtn:hover{
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+input[type=checkbox]
+{
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  padding: 10px;
+  margin: 0px 10px;
+}
+#keresoBtn-Box{
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+}
+
+#reszletesKeresoBtn{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#dropdown_arrow{
+  transform: rotate(90deg);
+  transition-duration: 0.2s;
+}
+#dropdown_arrow{
+  width: 30px;
+}
+#dropdown_arrow:hover{
+  transform: rotate(270deg);
+  transition-duration: 0.2s;
 }
