@@ -75,12 +75,11 @@ select {
 /*--------------Lenyíló kereső-------------------------*/
 
 #dropdown_kereso {
-  display: flex;
+  display: none;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin-top: 50px;
 }
 #checkboxs {
   display: flex;
@@ -259,12 +258,12 @@ input[type=checkbox]
 }
 #dropdown_arrow{
   transform: rotate(90deg);
-  transition-duration: 0.2s;
-}
-#dropdown_arrow{
+  transition-duration: 0.5s;
   width: 30px;
 }
-#dropdown_arrow:hover{
-  transform: rotate(270deg);
-  transition-duration: 0.2s;
+#evjarat{
+  align-items: center;
+}
+#evjarat p{
+  white-space: nowrap;
 }
