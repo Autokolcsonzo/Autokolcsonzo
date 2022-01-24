@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+.fFoglalasok {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom:50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fFoglalas {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.fFoglalas h3 {
+  color: #17446b;
+  padding:10px;
+  text-shadow: 0px 4px 4px #8a8484;
+}
+
+.datum h4{
+    color: #17446b;
+
+}
+
+.datum p{
+    font-style: italic;
+}
+
+.datum {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+
+#foglalasKep {
+  max-width: 100%;
+}
+
+#fogMod {
+  background-color: #e0e4e7;
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 2px;
+  margin: 2px;
+}
+
+#fogMod:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+#fogLemond {
+  background-color: #e0e4e7;
+  border: none;
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 2px;
+  margin: 2px;
+}
+
+#fogLemond:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.reszletTrigger li {
+  background-color: #e0e4e7;
+  border-radius: 2px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0,
+    rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px;
+  margin: 10px;
+}
+
+.reszletTrigger li:hover {
+  background-color: #b1c5ee;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
