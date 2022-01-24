@@ -22,9 +22,9 @@
   <link rel="stylesheet" href="css/szerkezet.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/regisztracio.css" />
   <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/fooldal.css" />
+<!--   <link rel="stylesheet" href="css/regisztracio.css" /> -->
+  <link rel="stylesheet" href="css/felhasznaloiProfil.css" />
 </head>
 
 <body>
@@ -82,39 +82,53 @@
                   <img src="kepek/headerimgSmaller.png" id="fokep" alt="" />
                 </div>
               </div>
-      
+        
+              <!-- autókeresés részletes keresés nélkül -->
+              <!--    <div class="hsor3">
+            <div class="autoKereso"> -->
+        
+              <!-- főoldali autókereső form -->
+        
+              <!--     </div>
+            </div> -->
+          </div>
+ <div class="fprofil">
+    <div class="felhasznaloiModositas">
+          <form action="">
+            <div class="form-header">
+              <h3>Bejelentkezés</h3>
             </div>
+
+            <div class="sor">
+              <div class="inputfield">
+                <label for="fnev">Felhasználónév:</label>
+               
+                <br />
+                <input type="text" name="fnev" id="fnev" placeholder="valaki97" /><br />
+              </div>
             
-            <div class="container">
-              <!-- bejelentkezés form -->
-    <div class="form">
-      <h3>Bejelentkezés</h3>
-      <form action="">
-      <div class="inputfield">
-        <label>Felhasználónév:</label>
-        <br />
-        <input type="text" class="felhNevInput" placeholder="Piroska66" />
-      </div>
+            <div class="sor">
+              <div class="inputfield">
+                <label for="jelszo1">Jelszó:</label>
+                <br>
+                <input
+                  type="password"
+                  id="jelszo1"
+                  name="jelszo1"
+                  class="jelszo"
+                  placeholder="******"
+                />
+              </div>
 
-      <div class="inputfield">
-        <label>Jelszó:</label>
-      </div>
-      <div class="inputfield">
-        <input
-          type="password"
-          class="jelszo1Input"
-          placeholder="******"
-        />
-      </div>
-      <br />
-      <div class="inputfield">
-        <input type="submit" value="Bejelentkezés" class="regButton" />
-      </div>
-    </form>
-    <!-- bejelentkezés form VÉGE -->
-  </div>
-    </div>
-
+            </div> 
+           
+            </div>   
+              <input type="submit" value="Bejelentkezés" id="adatotMent" />
+ 
+         
+          </form>
+        </div>
+        </div>
             <!-- Footer -->
     <footer>
       <div id="footer_links">
