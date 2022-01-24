@@ -78,7 +78,7 @@ select {
 /*--------------Lenyíló kereső-------------------------*/
 
 #dropdown_kereso {
-  display: none;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
@@ -279,6 +279,11 @@ input[type=checkbox]
 #search input{
   height: 48px;
   font-size: 20px;
+  padding: 10px;
+  background: rgba(192, 204, 240, 0.37);
+  border: 1px solid rgb(177, 177, 180);
+  height: 50px;
+  outline: 0;
 }
 #search img{
   width: 25px;
