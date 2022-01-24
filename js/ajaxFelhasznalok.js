@@ -7,13 +7,13 @@ class MyAjax {
       url: apiVegpont,
       type: "GET",
       success: function (result) {
-        for (let i = 0; i < result.length; i++) {
+        /*         for (let i = 0; i < result.length; i++) {
           tomb.push(i);
           
-        }
-       /*  result.forEach((value) => {
+        } */
+        result.forEach((value) => {
           tomb.push(value);
-        }); */
+        });
         myCallback(tomb);
       },
     });

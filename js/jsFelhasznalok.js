@@ -11,11 +11,12 @@ $(function () {
 
   function TermekValasztas() {
     // van egy sablonelemünk
-    /*     szuloElem.show(); */
-    sablonElem.show();
+    szuloElem.show();
+    /*    sablonElem.show(); */
     felhasznalok.forEach(function (elem) {
       const ujElem = sablonElem.clone().appendTo(szuloElem);
       const ujTermek = new Felhasznalo(ujElem, elem);
+      console.log(ujTermek);
     });
 
     //sablonElem.remove();
