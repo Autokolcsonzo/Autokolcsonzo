@@ -76,6 +76,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 20px;
 }
 .vonal1{
     width: 70%;

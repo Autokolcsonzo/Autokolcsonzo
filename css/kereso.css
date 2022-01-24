@@ -37,10 +37,12 @@
 
 #idoEl {
   width: 90px;
+  font-size: 20px;
 }
 
 #idoVissza {
   width: 90px;
+  font-size: 20px;
 }
 
 .input-box input,
@@ -50,6 +52,7 @@ select {
   border: 1px solid rgb(177, 177, 180);
   height: 50px;
   outline: 0; /* nem lesz kerete mikor belekattintunk */
+  font-size: 20px;
 }
 
 .kereses form .btn {
@@ -266,4 +269,22 @@ input[type=checkbox]
 }
 #evjarat p{
   white-space: nowrap;
+}
+#search{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+#search input{
+  height: 48px;
+  font-size: 20px;
+}
+#search img{
+  width: 25px;
+  margin-right: 5px;
+}
+#dropdown_kereso section input{
+  height: 25px;
+  font-size: 15px;
 }
