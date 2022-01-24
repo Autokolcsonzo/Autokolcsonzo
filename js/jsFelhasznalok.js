@@ -2,20 +2,21 @@ $(function () {
   const myAjax = new MyAjax();
   const felhasznalok = [];
   //const szuloElem = $(".termekek");
-    let apiVegpont = "http://localhost:3000/felhasznalo";
-   
-    
+  const szuloElem = $(".felhasznalokKiiratasa");
+  const sablonElem = $(".felhasznalok");
+  szuloElem.empty();
+  let apiVegpont = "http://localhost:3000/felhasznalo";
+
   myAjax.getAdat(apiVegpont, felhasznalok, TermekValasztas);
 
-    function TermekValasztas() {
+  function TermekValasztas() {
     // van egy sablonelemünk
-    const szuloElem = $(".felhasznalokKiiratasa");
-    const sablonElem = $("felhasznalok");
-    szuloElem.empty();
     szuloElem.show();
+    /*    sablonElem.show(); */
     felhasznalok.forEach(function (elem) {
       const ujElem = sablonElem.clone().appendTo(szuloElem);
       const ujTermek = new Felhasznalo(ujElem, elem);
+      console.log(ujTermek);
     });
 
     //sablonElem.remove();
