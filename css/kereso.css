@@ -293,3 +293,52 @@ input[type=checkbox]
   height: 25px;
   font-size: 15px;
 }
+
+
+@media only screen and (max-width: 1620px) {
+  #check_wrapper-1, #check_wrapper-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #checkboxs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #checkboxs section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  #modell_parameter_kereso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+@media only screen and (max-width: 995px) {
+  .input-box {
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+  #search{
+    width: 100%;
+  }
+  .kereses form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+}
+}
