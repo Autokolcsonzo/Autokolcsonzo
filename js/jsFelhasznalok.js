@@ -1,7 +1,6 @@
 $(function () {
   const myAjax = new MyAjax();
   const felhasznalok = [];
-  //const szuloElem = $(".termekek");
   const szuloElem = $(".felhasznalokKiiratasa");
   const sablonElem = $(".felhasznalok");
   szuloElem.empty();
@@ -12,11 +11,10 @@ $(function () {
   function TermekValasztas() {
     // van egy sablonelemünk
     szuloElem.show();
-    /*    sablonElem.show(); */
+    /*     sablonElem.show(); */
     felhasznalok.forEach(function (elem) {
       const ujElem = sablonElem.clone().appendTo(szuloElem);
       const ujTermek = new Felhasznalo(ujElem, elem);
-      console.log(ujTermek);
     });
 
     //sablonElem.remove();
