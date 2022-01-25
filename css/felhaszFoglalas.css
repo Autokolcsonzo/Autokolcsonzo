@@ -60,7 +60,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  padding: 2px;
+  padding: 5px;
   margin: 2px;
 }
 
@@ -80,7 +80,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  padding: 2px;
+  padding: 5px;
   margin: 2px;
 }
 
@@ -106,3 +106,23 @@
   text-decoration: none;
   transition-duration: 0.2s;
 }
+
+
+.reszAdatokTable{
+  width:100%;
+}
+
+tr :nth-child(1) {
+  color: #17446b;
+  font-weight: bold;
+}
+
+tr :nth-child(2) {
+  text-align: right;
+}
+
+td{
+  padding: 2px;
+  font-weight: italic;
+}
+
