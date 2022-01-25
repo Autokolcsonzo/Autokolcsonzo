@@ -15,8 +15,10 @@ nav ul {
 nav ul li {
   margin: 20px;
   font-style: italic;
+  font-weight: bolder;
+  font-size: 40px;
   color: #464646;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Cormorant SC', serif;
 }
 nav ul li a {
   padding: 20px;
@@ -24,12 +26,12 @@ nav ul li a {
 }
 .autokMenu ul,
 .autokMenu ul li a {
-  width: 170px;
+  width:250px;
   padding-left: 20px;
 }
 
 nav a:hover {
-  text-decoration: 2px underline rgba(14, 14, 226, 0.788);
+  text-decoration: 2px underline #17446b;;
 }
 
 .autokMenu {
@@ -43,7 +45,7 @@ nav a:hover {
 .autokMenu li {
   font-style: italic;
   color: #464646;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Cormorant SC', serif;
 }
 
 nav ul li:hover .autokMenu {
@@ -51,5 +53,37 @@ nav ul li:hover .autokMenu {
 }
 
 .autokMenu li:hover {
+  text-decoration: 2px underline #17446b;
+}
+
+.felhasznaloMenu ul,
+.felhasznaloMenu ul li a {
+  width: 250px;
+  padding-left: 50px;
+}
+
+nav a:hover {
+  text-decoration: 2px underline #17446b;
+}
+
+.felhasznaloMenu {
+  display: none;
+  color: black;
+}
+.felhasznaloMenu a {
+  font-size: 15px;
+}
+
+.felhasznaloMenu li {
+  font-style: italic;
+  color: #464646;
+  font-family:'Cormorant SC', serif;
+}
+
+nav ul li:hover .felhasznaloMenu {
+  display: block;
+}
+
+.felhasznaloMenu li:hover {
   text-decoration: 2px underline #17446b;
 }
