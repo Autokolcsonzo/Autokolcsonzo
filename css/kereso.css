@@ -316,7 +316,7 @@ input[type="checkbox"] {
     margin-bottom: 0.5rem;
   }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1200px) {
   #modell_parameter_kereso {
     display: flex;
     flex-direction: row;

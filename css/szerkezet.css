@@ -49,41 +49,53 @@ footer {
   margin: 5px;
 }
 
-/* Járműveink menüpont */
 
-.placeholder_item2 {
-  background: rgb(241, 239, 239);
-  /*   height: 100%; */
-  text-align: center;
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  margin: 0.5%;
+@media only screen and (max-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav kereses"
+      "sidenav primarycontent"
+      "sidenav primarycontent"
+      "sidenav primarycontent"
+      "sidenav primarycontent"
+      "sidenav footer";
+      max-width: 1200px;
+  }
 }
-
-.placeholder_item2 .tartalom h3,
-p {
-  padding: 2%;
+@media only screen and (max-width: 940px) {
+  main {
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-areas:
+      "sidenav" "header"
+      "kereses"
+      "primarycontent"
+      "primarycontent"
+      "primarycontent"
+      "primarycontent"
+      "footer";
+      max-width: 940px;
+  }
+  body{
+    background-color: #e0e4e7;
+  }
 }
-
-.adatok {
-  display: flex;
-  flex-flow: row wrap;
-  margin-bottom: 1.5rem;
-}
-
-.adatok div {
-  flex: 0 0 50%;
-  max-width: 50%;
-  border: 1px solid rgba(221, 221, 221, 0.466);
-  border-radius: 20px;
-}
-
-.adatok div span {
-  color: #151314;
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  /*   font-weight: 500; */
-  /* letter-spacing: 0; */
-  line-height: 1.5;
-  margin: 0.5rem 0 0.5rem 0;
+@media only screen and (max-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "kereses"
+      "primarycontent"
+      "primarycontent"
+      "primarycontent"
+      "primarycontent"
+      "footer";
+      max-width: 600px;
+  }
 }
