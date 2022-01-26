@@ -1,17 +1,14 @@
 $(function () {
-
-    $(".card-block-3,.card-block-4,.card-block-5").css("display", "none");
     kartyaNyito();
     kartyaHover();
     function kartyaNyito() {
         let zarva = false;
-        $(".card-block-3,.card-block-4,.card-block-5").css("display", "none");
         $(".jarmu-card-reszletek").on("click", () => {
             if (zarva) {
-                $(".card-block-3,.card-block-4,.card-block-5").slideUp(500);
+                $(".card-block-3,.card-block-5").slideUp(500);
                 zarva = false;
             } else if (!zarva) {
-                $(".card-block-3,.card-block-4,.card-block-5").slideDown(500);
+                $(".card-block-3,.card-block-5").slideDown(500);
                 zarva = true;
             }
         });
