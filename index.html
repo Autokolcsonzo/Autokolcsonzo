@@ -9,6 +9,7 @@
 
   <!-- Scriptek -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/kereso/dropDownKereso.js"></script>
   <style>
     /* Betűtípusok */
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
@@ -118,9 +119,148 @@
           <input style="margin-top: 10px" type="time" id="idoEl" name="idoEl" />
           <input style="margin-top: 10px" type="time" id="idoVissza" name="idoVissza" />
         </div>
-        <input type="submit" name="kereses" id="kereses" value="Keresés" class="btn" />
       </form>
+      <div id="dropdown_kereso">
+
+        <div id="checkboxs">
+          <div id="check_wrapper-1">
+            <section>
+              <label for="">GPS</label>
+              <input type="checkbox" name="GPS" value="GPS">
+            </section>
+            <section>
+              <label for="ABS">ABS</label>
+              <input type="checkbox" name="ABS" value="ABS">
+            </section>
+            <section>
+              <label for="Tempomat">Tempomat</label>
+              <input type="checkbox" name="Tempomat" value="Tempomat">
+            </section>
+            <section>
+              <label for="Nitro">Nitro</label>
+              <input type="checkbox" name="Nitro" value="Nitro">
+            </section>
+          </div>
+          <div id="check_wrapper-1">
+            <section>
+              <label for="Önvezető">Önvezető</label>
+              <input type="checkbox" name="Önvezető" value="Önvezeto">
+            </section>
+            <section>
+              <label for="menu1">menu1</label>
+              <input type="checkbox" name="menu1" value="menu1">
+            </section>
+            <section>
+              <label for="menu2">menu2</label>
+              <input type="checkbox" name="menu2" value="menu2">
+            </section>
+            <section>
+              <label for="menu3">menu3</label>
+              <input type="checkbox" name="menu3" value="menu3">
+            </section>
+          </div>
+
+        </div>
+
+        <div id="modell_parameter_kereso">
+          <section>
+            <label for="Márka">Márka</label>
+            <select id="Márka" name="Márka">
+              <option value="Opel">Opel</option>
+              <option value="Audi">Audi</option>
+              <option value="Mercedes">Mercedesz</option>
+              <option value="Suzuki">Suzuki</option>
+            </select>
+          </section>
+          <section>
+            <label for="Márka">Modell</label>
+            <select id="Márka" name="Márka">
+              <option value="Opel">Corsa</option>
+              <option value="Audi">A4</option>
+              <option value="Mercedes">S3</option>
+              <option value="Suzuki">Roster</option>
+            </select>
+          </section>
+          <section>
+            <label for="Kivitel">Kivitel</label>
+            <select id="Kivitel" name="Kivitel">
+              <option value="Pickup">Pickup</option>
+              <option value="Jip">Jip</option>
+              <option value="Kombi">Kombi</option>
+              <option value="Cabrio">Cabrio</option>
+            </select>
+          </section>
+
+          <section>
+            <label for="uzemanyag">Üzemanyag</label>
+            <select id="uzemanyag" name="uzemanyag">
+              <option value="Benzin">Benzin</option>
+              <option value="Desesel">Desesel</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="Elektromos">Elektromos</option>
+            </select>
+          </section>
+
+          <section>
+            <label for="valto">Váltó</label>
+            <select id="valto" name="valto">
+              <option value="Manuális">Manuális</option>
+              <option value="Félautómata">Félautómata</option>
+              <option value="Autómata">Autómata</option>
+            </select>
+          </section>
+
+
+          <div id="modell_evjarat">
+            <p>Évjárat</p>
+            <div id="evjarat">
+              <select id="etol" name="etol">
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+              </select>
+              <p>-tól</p>
+              <select id="eig" name="eig">
+                <option value="">2001</option>
+                <option value="">2002</option>
+                <option value="">2003</option>
+                <option value="">2004</option>
+              </select>
+              <p>-ig</p>
+            </div>
+
+          </div>
+        </div>
+        <section id="ulesek">
+          <label for="ulesek">Ülések száma</label>
+          <input type="number" name="ulesek">
+        </section>
+        <section id="minmax-wrapp">
+          <div id="minmaxLable">
+            <label for="min">tól-</label>
+            <label for="max">ig-</label>
+          </div>
+          <section id="tolig">
+            <section id="mint">
+              <input type="number" name="min" id="min">
+              <label for="min">Ft</label>
+            </section>
+            <section id="maxt">
+              <input type="number" id="max" name="max">
+              <label for="max">Ft</label>
+            </section>
+          </section>
+        </section>
+      </div>
+      <div id="keresoBtn-Box">
+        <input type="submit" name="kereses" id="keresesBtn" value="Keresés" />
+      </div><br>
+      <div id="reszletesKeresoBtn-Box">
+        <a id="reszletesKeresoBtn">Részletes keresés <img id="dropdown_arrow" src="kepek/arrow-circle-outline.svg"></a>
+      </div>
     </div>
+    
 
 
     <!-- felhasználóknak segítség/információ a foglaláshoz -->
