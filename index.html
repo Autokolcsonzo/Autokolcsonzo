@@ -10,6 +10,9 @@
   <!-- Scriptek -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/reszponzivDolgok.js"></script>
+  <script src="js/kereso/dropDownKereso.js"></script>
+  <script src="js/kereso/keresesiOpciokAjax.js"></script>
+  <script src="js/kereso/keresesiOpciok.js"></script>
   <style>
     /* Betűtípusok */
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
@@ -116,10 +119,7 @@
         <div class="input-box">
           <span>Válassz helyszíneink közül</span>
           <select id="helyszinek" name="helyszinek">
-            <option value="helyszin">-- Helyszín --</option>
-            <option value="ors">Budapest Örs Vezér Tér</option>
-            <option value="pecs">Pécs</option>
-            <option value="szeged">Szeged</option>
+            <option value="">--Helyszín--</option>
           </select>
           <!--  <br><br><br> -->
 
@@ -181,49 +181,33 @@
 
         <div id="modell_parameter_kereso">
           <section>
-            <label for="Márka">Márka</label>
-            <select id="Márka" name="Márka">
-              <option value="Opel">Opel</option>
-              <option value="Audi">Audi</option>
-              <option value="Mercedes">Mercedesz</option>
-              <option value="Suzuki">Suzuki</option>
+            <label for="marka">Márka</label>
+            <select id="marka" name="marka">
             </select>
           </section>
           <section>
-            <label for="Márka">Modell</label>
-            <select id="Márka" name="Márka">
-              <option value="Opel">Corsa</option>
-              <option value="Audi">A4</option>
-              <option value="Mercedes">S3</option>
-              <option value="Suzuki">Roster</option>
+            <label for="modell">Modell</label>
+            <select id="modell" name="modell">
             </select>
           </section>
           <section>
-            <label for="Kivitel">Kivitel</label>
-            <select id="Kivitel" name="Kivitel">
-              <option value="Pickup">Pickup</option>
-              <option value="Jip">Jip</option>
-              <option value="Kombi">Kombi</option>
-              <option value="Cabrio">Cabrio</option>
+            <label for="kivitel">Kivitel</label>
+            <select id="kivitel" name="kivitel">
+              <option value="">--Kivitel--</option>
             </select>
           </section>
 
           <section>
             <label for="uzemanyag">Üzemanyag</label>
             <select id="uzemanyag" name="uzemanyag">
-              <option value="Benzin">Benzin</option>
-              <option value="Desesel">Desesel</option>
-              <option value="Hybrid">Hybrid</option>
-              <option value="Elektromos">Elektromos</option>
+              <option value="">--Üzemanyag--</option>
             </select>
           </section>
 
           <section>
             <label for="valto">Váltó</label>
             <select id="valto" name="valto">
-              <option value="Manuális">Manuális</option>
-              <option value="Félautómata">Félautómata</option>
-              <option value="Autómata">Autómata</option>
+              <option value="">--Váltó--</option>
             </select>
           </section>
 
@@ -233,16 +217,10 @@
             <div id="evjarat">
               <select id="etol" name="etol">
                 <option value="">2001</option>
-                <option value="">2002</option>
-                <option value="">2003</option>
-                <option value="">2004</option>
               </select>
               <p>-tól</p>
               <select id="eig" name="eig">
                 <option value="">2001</option>
-                <option value="">2002</option>
-                <option value="">2003</option>
-                <option value="">2004</option>
               </select>
               <p>-ig</p>
             </div>

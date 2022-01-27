@@ -32,6 +32,7 @@
 .header {
   background-image: url("../kepek/header1.png");
   background-repeat: no-repeat;
+  
 }
 .headerSzoveg{
   display: flex;
@@ -115,4 +116,60 @@ button i {
   background-color: #b1c5ee;
   text-decoration: none;
   transition-duration: 0.2s;
+}
+
+@media only screen and (max-width: 1400px) {
+  #foglalasszoveg1{
+    font-size: 30px;
+    
+  }
+  #foglalasszoveg2 {
+    font-size: 40px;
+    
+  }
+
+ #fokep{
+   max-width: 95%;
+ }
+
+}
+
+@media only screen and (max-width: 1300px) {
+  #foglalasszoveg1{
+    font-size: 25px;
+    
+  }
+  #foglalasszoveg2 {
+    font-size: 35px;
+    
+  }
+
+  #fokep{
+    max-width: 90%;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  #foglalasszoveg1{
+    font-size: 20px;
+    
+  }
+  #foglalasszoveg2 {
+    font-size: 30px;
+    
+  }
+  #fokep{
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+ 
+  #fokep{
+   display: none;
+  }
+  .header{
+    background-position-y: 40%;
+  }
 }
