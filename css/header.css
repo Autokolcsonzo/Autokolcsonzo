@@ -22,7 +22,7 @@
 }
 #foglalasszoveg1{
   font-size: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 #foglalasszoveg2 {
   font-size: 50px;
@@ -128,9 +128,6 @@ button i {
     
   }
 
- #fokep{
-   max-width: 95%;
- }
 
 }
 
@@ -144,24 +141,21 @@ button i {
     
   }
 
-  #fokep{
-    max-width: 90%;
-  }
+
 
 }
 
 @media only screen and (max-width: 1200px) {
   #foglalasszoveg1{
-    font-size: 20px;
+    font-size: 25px;
+  
     
   }
   #foglalasszoveg2 {
-    font-size: 30px;
+    font-size: 35px;
     
   }
-  #fokep{
-    max-width: 80%;
-  }
+
 }
 
 @media only screen and (max-width: 1150px) {
