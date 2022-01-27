@@ -9,6 +9,7 @@
 
           <!-- Scriptek -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/reszponzivDolgok.js"></script>
   <style>
           /* Betűtípusok */
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
@@ -31,26 +32,42 @@
 <body>
   <main>
           <!-- Navigáció -->
-    <nav>
-      <ul>
+    <nav class="navbar">
         <div class="logo">
           <img src="kepek/logo.png" alt="logo" />
         </div>
-        <li><a href="index.html">Kezdőlap</a></li>
-        <li><a href="#">Rólunk</a></li>
-        <li><a href="#">Feltételek</a></li>
-        <li>
-          <a href="#">Járműveink <i class="fa fa-arrow-right"></i></a>
-          <div class="autokMenu">
-            <ul>
-              <li><a href="osszesAutoMenubol.html">Összes</a></li>
-              <li><a href="#">Autók</a></li>
-              <li><a href="#">Furgonok</a></li>
-              <li><a href="#">Pickupok</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
+           <div class="hamburgerMenu">
+             <div class="line line-1"></div>
+             <div class="line line-2"></div>
+             <div class="line line-3"></div>
+            </div>
+            
+            <ul class="navLista">
+            <li class="navElem"><a href="index.html">Kezdőlap</a></li>
+            <li class="navElem"><a class="reszponzivBejelentkezes" href="bejelentkezes.html">Bejelentkezés</a></li>
+            <li class="navElem"><a class="reszponzivBejelentkezes" href="regisztracio.html">Regisztráció</a></li>
+            <li class="navElem"><a href="#">Rólunk</a></li>
+            <li class="navElem"><a href="#">Feltételek</a></li>
+            <li class="navElem">
+              <a href="#">Járműveink <i class="fa fa-arrow-right"></i></a>
+              <div class="autokMenu">
+                <ul>
+                  <li class="navElem2"><a href="osszesAutoMenubol.html">Összes</a></li>
+                  <li class="navElem2"><a href="#">Autók</a></li>
+                  <li class="navElem2"><a href="#">Furgonok</a></li>
+                  <li class="navElem2"><a href="#">Pickupok</a></li>
+                </ul>
+              </div>
+              <div class="jarmuvekReszponziv"> <!-- csak reszponzivnál jelenik meg -->
+                <ul>
+                <li class="navElem2"><a href="osszesAutoMenubol.html">Összes</a></li>
+                  <li class="navElem2"><a href="#">Autók</a></li>
+                  <li class="navElem2"><a href="#">Furgonok</a></li>
+                  <li class="navElem2"><a href="#">Pickupok</a></li>
+              </ul>
+                </div>
+            </li>
+          </ul>
     </nav>
 
             <!--   Fejléc -->
