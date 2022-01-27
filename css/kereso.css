@@ -314,14 +314,54 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5rem;
-  }
+    align-items: center;
 }
-@media only screen and (max-width: 1200px) {
-  #modell_parameter_kereso {
+}
+@media only screen and (max-width: 1270px) {
+  .input-box {
+    flex: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+  #search{
+    width: 100%;
+  }
+  .kereses form {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+}
+#dropdown_kereso {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#checkboxs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+#modell_parameter_kereso section {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: -webkit-fill-available;
+  align-items: stretch;
+}
+#modell_parameter_kereso {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: -webkit-fill-available;
+  align-items: center;
 }
 }
 @media only screen and (max-width: 995px) {
@@ -340,5 +380,33 @@ input[type="checkbox"] {
     align-items: center;
     flex-direction: column;
     align-content: stretch;
+}
+#dropdown_kereso {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#checkboxs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#modell_parameter_kereso section {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: -webkit-fill-available;
+  align-items: stretch;
+}
+#modell_parameter_kereso {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: -webkit-fill-available;
 }
 }

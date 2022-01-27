@@ -1,4 +1,5 @@
 $(function () {
+    $(".card-block-3,.card-block-5").css("display", "none");
     kartyaNyito();
     kartyaHover();
     function kartyaNyito() {
