@@ -3,7 +3,6 @@
     {
       "helyszin": ["Budapest", "Szeged", "Pécs"],
       "marka": {
-                "--Márka--":["--Modell--"],
                 "BMW": ["X5", "X6", "X7"],
                 "aston martin": ["db11", "db12", "db13"],
                 "Tesla": ["Roster", "Modell 3S"],
