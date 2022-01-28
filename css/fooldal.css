@@ -5,11 +5,16 @@
 }
 
 .fooldalInfo {
+  font-size: 1em;
   display: flex;
   padding: 20px;
-  background-color: rgb(210, 210, 211);
-  margin: 70px;
+  background-color: rgb(231, 231, 240);
+  margin: 100px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #17446b;
+  
 }
 
 .fooldalInfo img {
@@ -21,27 +26,30 @@
 
 .fooldalInfo h3 {
   padding: 10px;
+  font-size: 1,5em;
+  color:#17446b;
+  font-family: "Cormorant SC", serif;
 }
 
 .infoHelyszin {
   flex-grow: 1;
 
   padding: 10px;
-  text-align: center;
+  
 }
 
 .infoDatum {
   flex-grow: 2;
 
   padding: 10px;
-  text-align: center;
+ 
 }
 
 .infoAuto {
   flex-grow: 3;
 
   padding: 10px;
-  text-align: center;
+ 
 }
 
 .infoHelyszin + .infoDatum + .infoAuto {
@@ -66,17 +74,19 @@
 }
 
 .marketingInfo p {
-  font-size: 20px;
+  font-size: 1,5em;
   color: rgb(77, 75, 75);
   text-shadow: 0px 4px 4px #464444;
-  letter-spacing: 2px;
+  font-family: "Cormorant SC", serif;
+  font-weight: bold;
+
+  
 }
 .marketingIcon {
   margin: 20px;
   background-color: #17446b;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width:50%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
     rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
@@ -109,6 +119,12 @@
 
 .hirKep img:hover {
   filter: grayscale(100);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .hirKep img:hover {
+    filter: none;
+  }
 }
 
 .hir {
@@ -149,10 +165,17 @@
   font-family: "Teko", sans-serif;
   -webkit-text-stroke: 1px #17446b;
   text-shadow: 0px 4px 4px #8a8484;
+  font-size: 23px;
 }
 
 .tovabb:hover {
-  font-size: 20px;
+  font-size: 25px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .tovabb:hover {
+    font-size: 23px;
+  }
 }
 
 .cim {
@@ -163,4 +186,21 @@
   font-size: 25px;
   margin: 50px;
   border-bottom: 2px solid rgb(197, 187, 187);
+}
+
+@media only screen and (max-width: 1480px) {
+  .hirekContainer {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .marketingContainer {
+    flex-direction: column;
+    align-content: center;
+  }
+  .fooldalInfo {
+    flex-direction: column;
+  }
 }
