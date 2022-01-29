@@ -9,7 +9,10 @@
 
   <!-- Scriptek -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/reszponzivDolgok.js"></script>
+  <script src="../js/reszponzivDolgok.js"></script>
+  <script src="../js/kereso/dropDownKereso.js"></script>
+  <script src="../js/kereso/keresesiOpciokAjax.js"></script>
+  <script src="../js/kereso/keresesiOpciok.js"></script>
   <style>
     /* Betűtípusok */
 
@@ -22,12 +25,12 @@
 
   <!-- Stílusok -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/szerkezet.css" />
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="stylesheet" href="css/fooldal.css" />
-  <link rel="stylesheet" href="css/nav.css" />
-  <link rel="stylesheet" href="css/kereso.css" />
+  <link rel="stylesheet" href="../css/szerkezet.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/fooldal.css" />
+  <link rel="stylesheet" href="../css/kereso.css" />
 </head>
 
 <body>
@@ -36,9 +39,9 @@
     <nav>
       <ul>
         <div class="logo">
-          <img src="kepek/logo.png" alt="logo" />
+          <img src="../kepek/logo.png" alt="logo" />
         </div>
-        <li><a href="index.html">Kezdőlap</a></li>
+        <li><a href="../index.html">Kezdőlap</a></li>
         <li>
             <a href="#">Felhasználó <i class="fa fa-arrow-right"></i></a>
             <div class="felhasznaloMenu">
@@ -56,7 +59,7 @@
           <a href="#">Járműveink <i class="fa fa-arrow-right"></i></a>
           <div class="autokMenu">
             <ul>
-              <li><a href="osszesAutoMenubol.html">Összes</a></li>
+              <li><a href="../osszesAutoMenubol.html">Összes</a></li>
               <li><a href="#">Autók</a></li>
               <li><a href="#">Furgonok</a></li>
               <li><a href="#">Pickupok</a></li>
@@ -94,15 +97,15 @@
               </div>
               <div class="jarmuvekReszponziv"> <!-- csak reszponzivnál jelenik meg -->
                 <ul>
-                <li class="navElem2"><a href="osszesAutoMenubol.html">Összes</a></li>
-                  <li class="navElem2"><a href="#">Autók</a></li>
-                  <li class="navElem2"><a href="#">Furgonok</a></li>
-                  <li class="navElem2"><a href="#">Pickupok</a></li>
-              </ul>
-                </div>
-            </li>
-          </ul>
-    </nav> -->
+                  <li class="navElem2"><a href="../osszesAutoMenubol.html">Összes</a></li>
+                    <li class="navElem2"><a href="#">Autók</a></li>
+                    <li class="navElem2"><a href="#">Furgonok</a></li>
+                    <li class="navElem2"><a href="#">Pickupok</a></li>
+                </ul>
+                  </div>
+              </li>
+            </ul>
+      </nav> -->
 
     <!--   Fejléc -->
 
@@ -115,10 +118,10 @@
         <div class="gombok">
           <button class="bejelentkezes" a>
             <i class="fa fa-user"></i></a>
-            <a href="bejelentkezes.html">Bejelentkezés
+            <a href="../bejelentkezes.html">Bejelentkezés
           </button>
           <button class="regisztracio">
-            <a href="regisztracio.html">Regisztráció</a>
+            <a href="../regisztracio.html">Regisztráció</a>
           </button>
         </div>
       </div>
@@ -127,23 +130,15 @@
       <div class="hsor2">
         <!-- header-ben a főszöveg -->
         <div class="headerSzoveg">
-          <h1 id="foglalasszoveg1">Keresd meg a számodra megfelelő autót!</h1>
-          <h1 id="foglalasszoveg2">Kezdj bele a foglalásba!</h1>
+          <h1 id="foglalasszoveg1">Foglalások</h1>
+          
         </div>
         <div class="headerkep">
-          <img src="kepek/headerimgSmaller.png" id="fokep" alt="" />
+          <img src="../kepek/headerimgSmaller.png" id="fokep" alt="" />
         </div>
       </div>
 
-      <!-- autókeresés részletes keresés nélkül -->
-      <!--    <div class="hsor3">
-    <div class="autoKereso"> -->
-
-      <!-- főoldali autókereső form -->
-
-      <!--     </div>
-    </div> -->
-    </div>
+  </div>
     <div class="kereses">
       <form action="">
         <div class="input-box">
@@ -178,26 +173,23 @@
     <div id="primary_content">
       <div class="fooldalInfo">
         <div class="infoHelyszin">
-          <img src="kepek/location.png" alt="" />
+          <img src="../kepek/location.png" alt="" />
           <h3>Válassz helyszínt!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper,
-            arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
+          <p>Több telephelyünk közül választhatod ki a számodra legmegfelelőbbet az országban!</p>
 
 
         </div>
         <div class="infoDatum">
-          <img src="kepek/date.png" alt="" />
+          <img src="../kepek/date.png" alt="" />
           <h3>Tűzd ki a dátumot!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper,
-            arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
+          <p>Neked elég csak kiválasztanod a kívánt dátumot és máris számos autónk közül válogathatsz!</p>
 
         </div>
 
         <div class="infoAuto">
-          <img src="kepek/perfectcar.png" alt="" />
-          <h3>Foglald le a tökéletes autót!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rhoncus, lorem semper mattis ullamcorper,
-            arcu orci tristique dui, ornare tincidunt enim enim sed mi.</p>
+          <img src="../kepek/perfectcar.png" alt="" />
+          <h3>Foglald le az autód!</h3>
+          <p>Ha már regisztáltál, pár kattintással lefoglalhatod a számodra legideálisabb autót!</p>
 
         </div>
 
@@ -213,7 +205,7 @@
 
         <div class="marketingInfo">
           <div class="marketingIcon">
-            <img src="kepek/priceicon.png" alt="" />
+            <img src="../kepek/priceicon.png" alt="" />
           </div>
 
 
@@ -224,7 +216,7 @@
         </div>
         <div class="marketingInfo">
           <div class="marketingIcon">
-            <img src="kepek/karbantartIcon.png" alt="" />
+            <img src="../kepek/karbantartIcon.png" alt="" />
           </div>
 
           <p>Rendszeresen karbantartott autók</p>
@@ -234,7 +226,7 @@
 
         <div class="marketingInfo">
           <div class="marketingIcon">
-            <img src="kepek/checkIcon.png" alt="" />
+            <img src="../kepek/checkIcon.png" alt="" />
           </div>
 
           <p>Rugalmasság</p>
@@ -255,7 +247,7 @@
 
         <div class="hirek">
           <div class="hirKep">
-            <img src="kepek/hir2.png" alt="" />
+            <img src="../kepek/hir2.png" alt="" />
           </div>
           <div class="hir">
             <span class="tag">Autós cikkek</span>
@@ -275,7 +267,7 @@
 
         <div class="hirek">
           <div class="hirKep">
-            <img src="kepek/hir3.png" alt="" />
+            <img src="../kepek/hir3.png" alt="" />
           </div>
           <div class="hir">
             <span class="tag">Fejlődés</span>
@@ -295,7 +287,7 @@
 
         <div class="hirek">
           <div class="hirKep">
-            <img src="kepek/hir1.png" alt="" />
+            <img src="../kepek/hir1.png" alt="" />
           </div>
           <div class="hir">
             <span class="tag">Autós cikkek</span>
@@ -329,12 +321,12 @@
       <div id="footer_links">
         <div id="footer_lists">
           <div id="footer_logo">
-            <img src="kepek/logo.png" alt="logo" /><br><br>
+            <img src="../kepek/logo.png" alt="logo" /><br><br>
             <h6 id="payment_icon_txt">fizetési lehetőségek:</h6>
             <div id="payment_icons">
-              <img src="kepek/credit-card-svgrepo-com.svg" alt="cardicon" />
-              <img src="kepek/cash1.svg" alt="cashicon" />
-              <img src="kepek/bitcoin-btc-logo.svg" alt="bitcoinIcon" />
+              <img src="../kepek/credit-card-svgrepo-com.svg" alt="cardicon" />
+              <img src="../kepek/cash1.svg" alt="cashicon" />
+              <img src="../kepek/bitcoin-btc-logo.svg" alt="bitcoinIcon" />
             </div>
           </div>
           <dl id="footer_list_1">
@@ -368,10 +360,9 @@
           <div id="footer_connections">
             <div id="footer_icons">
               <ul>
-                <li><a href=""><img src="kepek\3377042_gmail_logo_media_social_icon.svg" alt="gmail_icon"></a></li>
-                <li><a href=""><img src="kepek\5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.svg"
-                      alt="whatsapp_icon"></a></li>
-                <li><a href=""><img src="kepek\5365678_fb_facebook_facebook logo_icon.svg" alt="facebook_icon"></a></li>
+                <li><a href=""><img src="../kepek\3377042_gmail_logo_media_social_icon.svg" alt="gmail_icon"></a></li>
+                <li><a href=""><img src="../kepek\5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt="whatsapp_icon"></a></li>
+                <li><a href=""><img src="../kepek\5365678_fb_facebook_facebook logo_icon.svg" alt="facebook_icon"></a></li>
               </ul>
             </div>
           </div>
