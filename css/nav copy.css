@@ -90,9 +90,7 @@ nav ul li:hover .felhasznaloMenu {
 
 .reszponzivLogo,
 .reszponzivCim,
-.wrapper,
-.mobilNav img,
-.mobilNav li {
+.wrapper {
   display: none;
 }
 
@@ -100,7 +98,7 @@ nav ul li:hover .felhasznaloMenu {
 
 @media only screen and (max-width: 940px) {
   .header,
-  .logo, .hamburger, .mobilNav img, .mobilNav li/* ,
+  .logo/* ,
   .autokMenu ul */ {
     display: none;
   }
@@ -130,37 +128,37 @@ nav ul li:hover .felhasznaloMenu {
     height: 80px;
     width: 100%;
   }
-  /* 
+
   .masodikNav {
-        display: contents;
+    /*     display: contents; */
     background-color: white;
     width: 100%;
     height: 60px;
-  } */
+  }
 
-  /* .masodikNav .dropdownMenu {
+  .masodikNav .dropdownMenu {
     /* position: absolute;
     top: 150px; */
-  /*    margin-top: 3%; */
-  /*  width: 4.5%; */
-  /*  margin-left: 88%; */
-  /* }  */
+    margin-top: 3%;
+    /*  width: 4.5%; */
+    margin-left: 88%;
+  }
 
-  /*  .profilLogo {
+  .profilLogo {
     display: flex;
-  } */
+  }
 
-  /*  .reszponzivGombok {
+  .reszponzivGombok {
     display: flex;
     margin-top: 2.5%;
-  } */
+  }
 
   .dropdown-caret {
-    display: inline-block;
-    width: 0;
+    /*    display: inline-block; */
+    /*   width: 0;
     height: 0;
-    vertical-align: middle;
-    content: "";
+    vertical-align: middle; */
+    /*   content: ""; */
     border-style: solid;
     border-width: 6px 6px 0;
     border-right-color: transparent;
@@ -171,6 +169,7 @@ nav ul li:hover .felhasznaloMenu {
   .reszpBejelentkezes,
   .reszpRegisztracio {
     margin-left: 5%;
+    /*  display: flex; */
   }
 
   .reszponzivGombok img {
@@ -197,19 +196,14 @@ nav ul li:hover .felhasznaloMenu {
   } */
 
   nav ul {
-    /* reszp. felső menüsor elemei */
     display: flex;
     float: right;
     margin-right: 350px;
   }
 
   nav ul li {
-    /* reszp. felső menüsor elemei */
+    /*     display: flex; */
     margin: 0 5px;
-  }
-
-  .nav2 {
-    display: none;
   }
 
   /* MÁSODIK NAVIGÁCIÓS SÁV */
@@ -225,7 +219,6 @@ nav ul li:hover .felhasznaloMenu {
   }
 
   .navbar .reszpGombok {
-    /* ki-be jelentkezés gombok */
     display: flex;
     justify-content: space-between;
   }
@@ -241,15 +234,15 @@ nav ul li:hover .felhasznaloMenu {
     text-transform: uppercase;
   }
 
-  /*   .navbar .nav_right > ul {
+  .navbar .nav_right > ul {
     display: flex;
     align-items: center;
-  } */
+  }
 
   .navbar .nav_right ul li.nr_li {
     margin-left: 25px;
     cursor: pointer;
-    color: #fff;
+    /*  color: #fff; */
     font-size: 20px;
     position: relative;
   }
@@ -271,7 +264,7 @@ nav ul li:hover .felhasznaloMenu {
   }
 
   .navbar .dd_menu .dd_left {
-    background: #74b7de;
+    background: #17446b;
     padding: 15px 20px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -287,11 +280,11 @@ nav ul li:hover .felhasznaloMenu {
   }
 
   .navbar .dd_menu:before {
-    /* kis nyilacska, ami a profilra mutat */
+    /* kis nyilacska */
     content: "";
     position: absolute;
     top: -20px;
-    right: 31px;
+    right: 30px;
     border: 10px solid;
     border-color: transparent transparent #fff transparent;
   }
@@ -300,114 +293,106 @@ nav ul li:hover .felhasznaloMenu {
     display: flex;
   }
 
-  /* MÁSODIK NAV SÁV VÉGE */
+  /* 
 
-  @media only screen and (max-width: 800px) {
-    nav ul li,
-    .navbar {
-      display: none;
-    }
+ */
+  nav ul .hambiMenupontok li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+  }
 
-    .mobilNav li {
-      display: contents;
-    }
+  nav ul .hambiMenupontok li img {
+    width: 35px;
+    vertical-align: middle;
+  }
 
-    nav {
-      display: flex;
-    }
+  nav ul .hambiMenupontok .hambiMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
 
-    .hamburger {
-      position: relative;
-      display: block;
+  /* 
+
+
+ */
+}
+/* MÁSODIK NAV SÁV VÉGE */
+
+@media only screen and (max-width: 800px) {
+  nav ul li,
+  .wrapper {
+    display: none;
+  }
+
+  /*     .hamburgerMenu {
       width: 35px;
+      height: 30px;
+      position: fixed;
+      top: 27px;
+      right: 15px;
       cursor: pointer;
-
-      appearance: none;
-      background: none;
-      outline: none;
-      border: none;
-    }
-
-    .hamburger .bar,
-    .hamburger:after,
-    .hamburger:before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 5px;
-      background-color: rgb(27, 27, 27);
-      margin: 6px 0px;
-      transition: 0.4s;
-    }
-
-    .hamburger.is-active:before {
-      transform: rotate(-45deg) translate(-8px, 6px);
-    }
-
-    .hamburger.is-active:after {
-      transform: rotate(45deg) translate(-9px, -8px);
-    }
-
-    .hamburger.is-active .bar {
-      opacity: 0;
-    }
-
-    .mobilNav {
-      max-width: 1600px;
-      margin: 0 auto;
-      padding-left: 128px;
-      padding-right: 128px;
-      position: fixed;
-      top: 0;
-      left: 100%;
-      width: 97%;
-      min-height: 100vh;
-      display: block;
-      z-index: 98;
-      background-color: #586a85;
-      padding-top: 120px;
-      transition: 0.4s;
-    }
-
-    /*   .mobilNav {
-      margin: 0 auto;
-      max-width: 1600px;
-      padding-left: 128px;
-      padding-right: 128px;
-      height: max-content;
-      width: max-content;
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 100%;
-      z-index: 10;
+      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #586a85;
-      transition: top 1s ease;
+      justify-content: space-around;
+    }
+
+    .line {
+      width: 100%;
+      height: 3px;
+      background: black;
+      transition: all 0.8;
     } */
 
-    .mobilNav.is-active {
-      left: 0;
-    }
+  .hamburgerMenu ul li {
+    display: contents;
+  }
 
-    .mobilNav a {
-      display: block;
-      width: 100%;
-      max-width: 200px;
-      margin: 0 auto 16px;
-      text-align: center;
-      padding: 12px 16px;
-      /* background-color: #586a85; */
+  .hambiMenu i {
+    display: contents;
+  }
 
-      color: #fff;
-      font-size: 16pt;
-      text-decoration: none;
-    }
+  nav ul .hambiMenupontok {
+    /* display: flex; */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    transition: top 1s ease;
+    display: none;
+  }
 
-    .mobilNav li img {
-      width: 8%;
-    }
+  nav ul .hambiMenupontok .hambiMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav ul .hambiMenupontok .hambiMenu {
+    display: block;
+  }
+
+  nav ul .hambiMenupontok li a {
+    display: inline-block;
+    padding: 15px;
+  }
+
+  nav .hambiMenu {
+    font-size: 2rem;
+    margin: 20px;
+    /*  display: none; */
+    cursor: pointer;
   }
 }
