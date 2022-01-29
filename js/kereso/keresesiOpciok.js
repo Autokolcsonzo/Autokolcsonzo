@@ -4,19 +4,21 @@ $(function () {
   let apiVegpont = "http://localhost:3000/keresoParameter";
   myAjax.getAdat(apiVegpont, opciok, opcioFeltoltes);
   let optionDOM = `
-              #helyszinek option,
+              #Khelyszinek option,
               #marka option, 
               #modell option,
               #kivitel option, 
               #uzemanyag option, 
-              #valto option`;
+              #valto option,
+              #etol option,
+              #eig option`;
 
   $("#marka").change(function () {
     let valasztottMarka = $("#marka").val();
     if (valasztottMarka == "marka") {
       $(optionDOM).remove();
+      $("#check_wrapper-1").empty();
       opcioFeltoltes();
-      console.log("Minden opció feltöltve");
     } else {
       $("#modell").empty();
       markaModellKapcsolat(valasztottMarka);
@@ -40,12 +42,13 @@ $(function () {
   }
 
   function opcioFeltoltes() {
-    $("#helyszinek").append(`<option value='helyszinek'>--Helyszín--</option>`);
+    $("#Khelyszinek").append(`<option value='helyszinek'>--Helyszín--</option>`);
     $("#marka").append(`<option value='marka'>--Márka--</option>`);
     $("#modell").append(`<option value='modell'>--Modell--</option>`);
     $("#kivitel").append(`<option value='kivitel'>--Kivitel--</option>`);
     $("#uzemanyag").append(`<option value='uzemanyag'>--Üzemanyag--</option>`);
     $("#valto").append(`<option value='valto'>--Váltó--</option>`);
+    $("#etol, #eig").append(`<option value='evjarat'>--Évjátat--</option>`);
     opciok.forEach(function (obj) {
       for (let marka in obj.marka) {
         let option = `<option value='${marka}'>${marka}</option>`;
@@ -59,7 +62,7 @@ $(function () {
       }
         for (let index = 0; index < obj.helyszin.length; index++) {
         let option = `<option value='${obj.helyszin[index]}'>${obj.helyszin[index]}</option>`;
-        $("#helyszinek").append(option);
+        $("#Khelyszinek").append(option);
       }
       for (let index = 0; index < obj.kivitel.length; index++) {
         let option = `<option value='${obj.kivitel[index]}'>${obj.kivitel[index]}</option>`;
@@ -73,7 +76,20 @@ $(function () {
         let option = `<option value='${obj.valto[index]}'>${obj.valto[index]}</option>`;
         $("#valto").append(option);
       }
-      
+      for (let index = 0; index < obj.checkboxs.length; index++) {
+        console.log(obj.checkboxs[index]);
+        $("#check_wrapper-1").append(`<section>
+                                        <label for="${obj.checkboxs[index]}">${obj.checkboxs[index]}</label>
+                                        <input type="checkbox" name="${obj.checkboxs[index]}" value="${obj.checkboxs[index]}">
+                                      </section>`);
+      }
+        evjarat(obj.evjarat[0],obj.evjarat[1]);
+        function evjarat(tol, ig){
+          let koztesEv = (ig-tol);
+          for (let index = 0; index <= koztesEv; index++) {
+            $("#etol, #eig").append(`<option value='${tol+index}'>${tol+index}</option>`);
+          }
+        }
     });
   }
 });
