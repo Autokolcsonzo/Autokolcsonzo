@@ -9,7 +9,7 @@ nav {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 nav ul {
-  position: fixed;
+  /*   position: fixed; */ /* változtatás */
   width: 200px;
 }
 nav ul li {
@@ -59,7 +59,7 @@ nav ul li:hover .autokMenu {
 .felhasznaloMenu ul,
 .felhasznaloMenu ul li a {
   width: 250px;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 nav a:hover {
@@ -88,28 +88,104 @@ nav ul li:hover .felhasznaloMenu {
   text-decoration: 2px underline #17446b;
 }
 
-.jarmuvekReszponziv,
-.reszponzivBejelentkezes,
+.reszponzivLogo,
 .reszponzivCim {
   display: none;
 }
 
+/* RESZPONZIVITÁS */
+
 @media only screen and (max-width: 940px) {
   .header,
-  .logo,
-  .autokMenu ul {
+  .logo/* ,
+  .autokMenu ul */ {
     display: none;
+  }
+
+  .headerSzoveg {
+    margin: 15px;
+    font-size: 19px;
+  }
+
+  .reszponzivCim {
+    color: #17446b;
+    font-family: "Teko", sans-serif;
+    -webkit-text-stroke: 1px #17446b;
+    text-shadow: 0px 4px 4px #8a8484;
   }
 
   .kereses form {
     padding: 40px;
   }
 
-  nav ul {
-    width: 210px;
+  nav {
+    background-color: white;
+    height: 80px;
+    width: 100%;
   }
 
-  .hamburgerMenu {
+  .reszponzivLogo {
+    display: contents;
+    color: rgb(65, 111, 189);
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .autokMenu ul,
+  .fa {
+    display: none;
+  }
+
+  /*  .autokMenu ul {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  nav ul {
+    display: flex;
+    float: right;
+    margin-right: 350px;
+  }
+
+  nav ul li {
+    /*     display: flex; */
+    margin: 0 5px;
+  }
+
+  /*   @media only screen and (max-width: 790px) {
+    nav {
+      background-color: white;
+      height: 80px;
+      width: 100%;
+    }
+  } */
+
+  @media only screen and (max-width: 800px) {
+    nav ul li {
+      display: none;
+    }
+
+    .hamburgerMenu {
+      width: 35px;
+      height: 30px;
+      position: fixed;
+      top: 27px;
+      right: 15px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .line {
+      width: 100%;
+      height: 3px;
+      background: black;
+      transition: all 0.8;
+    }
+  }
+
+  /*.hamburgerMenu {
     width: 35px;
     height: 30px;
     position: fixed;
@@ -131,15 +207,20 @@ nav ul li:hover .felhasznaloMenu {
   .navbar {
     width: 300px;
     height: 100%;
-    background-color: rgb(233, 224, 224);
+    background-color: rgb(247, 242, 242);
     position: fixed;
     top: 0;
     right: -300px;
+
+    /*   border-radius: 20% 0 0 60%; */
+  /*transition: right 0.8s;
+  }
+
+  .navbar ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-radius: 20% 0 0 60%;
-    transition: right 0.8s;
+    align-items: flex-start;
   }
 
   .gombValtozas {
@@ -147,13 +228,22 @@ nav ul li:hover .felhasznaloMenu {
   }
 
   .navLista {
-    text-align: right;
+    text-align: left;
     top: 100px;
   }
 
   .navElem,
   .navElem2 {
-    margin: 20px;
+    margin: 5px;
+  }
+
+  .navElem2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+    margin-left: 45%;
   }
 
   .jarmuvekReszponziv,
@@ -185,4 +275,8 @@ nav ul li:hover .felhasznaloMenu {
   .gombValtozas .line-3 {
     transform: rotateZ(45deg) translate(-8px, -6px);
   }
+
+  nav ul li a {
+    padding: 0;
+  }*/
 }
