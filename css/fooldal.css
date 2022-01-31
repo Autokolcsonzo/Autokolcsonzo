@@ -14,7 +14,6 @@
   text-align: center;
   border-radius: 5px;
   border: 1px solid #17446b;
-  
 }
 
 .fooldalInfo img {
@@ -26,8 +25,8 @@
 
 .fooldalInfo h3 {
   padding: 10px;
-  font-size: 1,5em;
-  color:#17446b;
+  font-size: 1, 5em;
+  color: #17446b;
   font-family: "Cormorant SC", serif;
 }
 
@@ -35,21 +34,18 @@
   flex-grow: 1;
 
   padding: 10px;
-  
 }
 
 .infoDatum {
   flex-grow: 2;
 
   padding: 10px;
- 
 }
 
 .infoAuto {
   flex-grow: 3;
 
   padding: 10px;
- 
 }
 
 .infoHelyszin + .infoDatum + .infoAuto {
@@ -74,19 +70,17 @@
 }
 
 .marketingInfo p {
-  font-size: 1,5em;
+  font-size: 1, 5em;
   color: rgb(77, 75, 75);
   text-shadow: 0px 4px 4px #464444;
   font-family: "Cormorant SC", serif;
   font-weight: bold;
-
-  
 }
 .marketingIcon {
   margin: 20px;
   background-color: #17446b;
   border-radius: 50%;
-  width:50%;
+  width: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
     rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
@@ -109,7 +103,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 370px;
+  width: 400px;
 }
 .hirKep img {
   width: 100%;
@@ -202,5 +196,11 @@
   }
   .fooldalInfo {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .fooldalInfo {
+    margin: 20px;
   }
 }
