@@ -7,7 +7,9 @@
   box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
   margin-bottom: 30px;
 }
-
+#Khelyszinek{
+  width: 100%;
+}
 .kereses form {
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +56,7 @@ select {
   height: 50px;
   outline: 0; /* nem lesz kerete mikor belekattintunk */
   font-size: 20px;
-  width: 100%;
+  width: fit-content;
 }
 
 .kereses form .btn {
