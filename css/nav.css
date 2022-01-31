@@ -445,9 +445,3 @@ nav ul li:hover .felhasznaloMenu {
     width: 0px;
   }
 }
-@media only screen and (max-width: 520px) {
-  .marketingContainer {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
