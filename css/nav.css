@@ -9,7 +9,7 @@ nav {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 nav ul {
-  /*   position: fixed; */ /* változtatás */
+  position: fixed;
   width: 200px;
 }
 nav ul li {
@@ -99,6 +99,9 @@ nav ul li:hover .felhasznaloMenu {
 /* RESZPONZIVITÁS */
 
 @media only screen and (max-width: 940px) {
+  nav ul{
+    position: relative;
+  }
   .header,
   .logo, .hamburger, .mobilNav img, .mobilNav li/* ,
   .autokMenu ul */ {
