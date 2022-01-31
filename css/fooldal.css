@@ -198,9 +198,3 @@
     flex-direction: column;
   }
 }
-
-@media only screen and (max-width: 800px) {
-  .fooldalInfo {
-    margin: 20px;
-  }
-}
