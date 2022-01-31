@@ -16,8 +16,8 @@
   margin-right: 10px;
 }
 .jarmu-card-img-box img {
-  width: 400px;
-  height: auto;
+  max-width: 400px;
+  max-height: fit-content;
   border-radius: 15px;
   transition: transform 0.5s ease;
 }

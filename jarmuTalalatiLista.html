@@ -12,8 +12,11 @@
   <script src="js/kereso/dropDownKereso.js"></script>
   <script src="js/kereso/keresesiOpciokAjax.js"></script>
   <script src="js/kereso/keresesiOpciok.js"></script>
-  <script src="js/cards/autoCard.js"></script>
   <script src="js/reszponzivDolgok.js"></script>
+  <script src="js/autoLista/autoAjax.js"></script>
+  <script src="js/autoLista/auto.js"></script>
+  <script src="js/autoLista/autok.js"></script>
+  <script src="js/cards/autoCard.js"></script>
   <style>
     /* Betűtípusok */
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
@@ -218,11 +221,9 @@
             <p>Évjárat</p>
             <div id="evjarat">
               <select id="etol" name="etol">
-                <option value="">2001</option>
               </select>
               <p>-tól</p>
               <select id="eig" name="eig">
-                <option value="">2001</option>
               </select>
               <p>-ig</p>
             </div>
@@ -263,75 +264,33 @@
     <!-- felhasználóknak segítség/információ a foglaláshoz -->
     <div id="primary_content">
       <div id="jarmu-lista">
-
-
-        <!--<div class="jarmu-card">
-          <div class="jarmu-card-img-box">
-            <img class="jarmu-card-kep" src="kepek/elantra-1080p.jpg" alt="logo-placeholder">
-          </div>
-          
-          <div class="card-block-1">
-            <span class="jarmu-card-marka">Opel</span>
-            <span class="jarmu-card-tipus">Corsa</span>
-            <span class="jarmu-card-kivitel">Kombi</span>
-          </div>
-          <div class="card-block-2">
-            <span class="jarmu-card-ar">5000</span>
-            <span class="jarmu-card-telephely">Budapest</span>
-          </div>
-         <div class="card-block-3">
-            <span class="jarmu-card-ajtok">4</span>
-            <span class="jarmu-card-utasok">5</span>
-            <span class="jarmu-card-szín">Kék</span>
-          </div>
-          <div class="card-block-4">
-            <span class="jarmu-card-valto">Autómata</span>
-            <span class="jarmu-card-uzemanyag">Elektromos</span>
-            <span class="jarmu-card-kategoria">Luxus</span>
-          </div>
-          <div class="card-block-5">
-            <ul class="jarmu-card-extra">
-            <li>Strucc bőr kormány</li>
-            <li>Nitró</li>
-            <li>lyukas kipufogó</li>
-          </ul>
-          </div>
-          
-          <div class="jarmu-card-buttons">
-            <input class="jarmu-card-reszletek" type="button" value="Részletek">
-            <input class="jarmu-card-foglalas" type="button" value="Foglalás">
-          </div>
-        </div>-->
         <div class="jarmu-card">
           <div class="jarmu-card-img-box">
-            <img class="jarmu-card-kep" src="kepek/elantra-1080p.jpg" alt="logo-placeholder">
+            <img class="jarmu-card-kep" src="" alt="">
           </div>
 
           <div class="card-block-1">
-            <span class="jarmu-card-marka">Opel</span>
-            <span class="jarmu-card-tipus">Corsa</span>
-            <span class="jarmu-card-kivitel">Kombi</span>
+            <span class="jarmu-card-marka"></span>
+            <span class="jarmu-card-tipus"></span>
+            <span class="jarmu-card-kivitel"></span>
           </div>
           <div class="card-block-2">
-            <span class="jarmu-card-ar">5000</span>
-            <span class="jarmu-card-arHeti">35000</span>
-            <span class="jarmu-card-telephely">Budapest</span>
+            <span class="jarmu-card-ar"></span>
+            <span class="jarmu-card-arHeti"></span>
+            <span class="jarmu-card-telephely"></span>
           </div>
           <div class="card-block-3">
-            <span class="jarmu-card-ajtok">4</span>
-            <span class="jarmu-card-utasok">5</span>
-            <span class="jarmu-card-szín">Kék</span>
+            <span class="jarmu-card-ajtok"></span>
+            <span class="jarmu-card-utasok"></span>
+            <span class="jarmu-card-szín"></span>
           </div>
           <div class="card-block-4">
-            <span class="jarmu-card-valto">Autómata</span>
-            <span class="jarmu-card-uzemanyag">Elektromos</span>
-            <span class="jarmu-card-kategoria">Luxus</span>
+            <span class="jarmu-card-valto"></span>
+            <span class="jarmu-card-uzemanyag"></span>
+            <span class="jarmu-card-kategoria"></span>
           </div>
           <div class="card-block-5">
             <ul class="jarmu-card-extra">
-              <li>Strucc bőr kormány,</li>
-              <li>Nitró,</li>
-              <li>lyukas kipufogó,</li>
             </ul>
           </div>
 
