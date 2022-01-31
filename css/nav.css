@@ -320,7 +320,7 @@ nav ul li:hover .felhasznaloMenu {
       display: contents;
     }
     .container {
-      width: -webkit-fill-available;
+      width: 100%;
   }
 
     nav {
