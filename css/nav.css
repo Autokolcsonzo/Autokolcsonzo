@@ -306,26 +306,35 @@ nav ul li:hover .felhasznaloMenu {
     nav ul li,
     .navbar {
       display: none;
+      position: relative;
+    }
+    .headerSzoveg {
+      margin: 0;
+      font-size: 0;
     }
 
     .mobilNav li {
       display: contents;
     }
+    .container {
+      width: -webkit-fill-available;
+  }
 
     nav {
       display: flex;
-    }
+      justify-content: flex-end;
+      align-items: center;
+  }
 
     .hamburger {
-      position: relative;
       display: block;
       width: 35px;
       cursor: pointer;
-
       appearance: none;
       background: none;
       outline: none;
       border: none;
+      z-index: 100;
     }
 
     .hamburger .bar,
@@ -351,21 +360,17 @@ nav ul li:hover .felhasznaloMenu {
     .hamburger.is-active .bar {
       opacity: 0;
     }
-
-    .mobilNav {
-      max-width: 1600px;
-      margin: 0 auto;
-      padding-left: 128px;
-      padding-right: 128px;
+    .is-active{
       position: fixed;
-      top: 0;
-      left: 100%;
-      width: 97%;
-      min-height: 100vh;
-      display: block;
+    }
+    .mobilNav {
+      display: none;
+      position: fixed;
+      width: 100%;
+      min-height: 100%;
       z-index: 98;
       background-color: #586a85;
-      padding-top: 120px;
+      padding-top: 15%;
       transition: 0.4s;
     }
 
@@ -389,7 +394,8 @@ nav ul li:hover .felhasznaloMenu {
     } */
 
     .mobilNav.is-active {
-      left: 0;
+      display: block;
+      transition: 0.4s;
     }
 
     .mobilNav a {
@@ -405,9 +411,20 @@ nav ul li:hover .felhasznaloMenu {
       font-size: 16pt;
       text-decoration: none;
     }
-
+    .navLista2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
     .mobilNav li img {
       width: 8%;
+    }
+    nav ul {
+      display: none;
+      float: none;
+      margin-right: 0;
+      width: 0px;
     }
   }
 }
