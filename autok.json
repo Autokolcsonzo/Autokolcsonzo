@@ -1,6 +1,7 @@
 {
     "autok": [
         {
+            "autoId": 1,
             "kep": "./kepek/232311_source.jpg",
             "marka": "BMW",
             "modell": "X5",
@@ -18,6 +19,7 @@
                         "struccbőr kormány, ","Nitró, ","Kecskeszőr ülés, ","lyukas kipufogó, "
                     ]
         },{
+            "autoId": 2,
             "kep": "./kepek/elantra-1080p.jpg",
             "marka": "Opel",
             "modell": "Corsa",
@@ -35,6 +37,7 @@
                         "Kecskeszőr ülés, ","Lyukas kipufogó, ","Gyerek ülés, "
                     ]
         },{
+            "autoId": 3,
             "kep": "./kepek/2018010359.jpg",
             "marka": "tesla",
             "modell": "Modell S",

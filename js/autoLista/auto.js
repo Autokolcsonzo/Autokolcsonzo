@@ -2,6 +2,7 @@ class Auto {
   constructor(elem, adat) {
     this.elem = elem;
     this.adat = adat;
+    this.autoId = this.elem.find(".jarmu-card-foglalas");
     this.kep = this.elem.find(".jarmu-card-kep");
     this.marka = this.elem.find(".jarmu-card-marka");
     this.modell = this.elem.find(".jarmu-card-tipus");
@@ -41,6 +42,7 @@ class Auto {
   setAdat(adat) {
     $(".card-block-3,.card-block-5").css("display", "none");
     this.adat = adat;
+    this.autoId.attr("id", adat.autoId);
     this.kep.attr("src", adat.kep);
     this.marka.text(adat.marka);
     this.modell.text(adat.modell);
