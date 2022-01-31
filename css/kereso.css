@@ -38,13 +38,8 @@
   outline: 0; /* nem lesz kerete mikor belekattintunk */
 }
 
-#idoEl {
-  width: 90px;
-  font-size: 20px;
-}
-
-#idoVissza {
-  width: 90px;
+#idoEl,#idoVissza {
+  width: 100%;
   font-size: 20px;
 }
 
