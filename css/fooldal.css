@@ -198,3 +198,22 @@
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .fooldalInfo {
+    font-size: 1em;
+    display: flex;
+    margin : 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+.hirek {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+  overflow: hidden;
+  width: fit-content;
+}
+
+}

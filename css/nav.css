@@ -319,6 +319,9 @@ nav ul li:hover .felhasznaloMenu {
     display: none;
     position: relative;
   }
+  .kereses form {
+    padding: 0;
+  }
 
   .headerSzoveg {
     margin: 0;
