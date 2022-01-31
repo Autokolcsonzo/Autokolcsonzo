@@ -35,8 +35,13 @@
   outline: 0; /* nem lesz kerete mikor belekattintunk */
 }
 
-#idoEl,#idoVissza {
-  width: 100%;
+#idoEl {
+  width: 90px;
+  font-size: 20px;
+}
+
+#idoVissza {
+  width: 90px;
   font-size: 20px;
 }
 
@@ -403,8 +408,5 @@ input[type="checkbox"] {
   flex-direction: column;
   flex-wrap: wrap;
   width: -webkit-fill-available;
-}
-#Khelyszinek{
-  width: 100%;
 }
 }
