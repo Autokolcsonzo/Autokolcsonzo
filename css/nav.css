@@ -2,16 +2,19 @@
   width: 90%;
   height: auto;
 }
+
 nav {
   padding: 10px;
   background-color: rgb(231, 231, 231);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
+
 nav ul {
   position: fixed;
   width: 200px;
 }
+
 nav ul li {
   margin: 20px;
   font-style: italic;
@@ -20,10 +23,12 @@ nav ul li {
   color: #464646;
   font-family: "Cormorant SC", serif;
 }
+
 nav ul li a {
   padding: 20px;
   font-size: 17px;
 }
+
 .autokMenu ul,
 .autokMenu ul li a {
   width: 250px;
@@ -38,6 +43,7 @@ nav a:hover {
   display: none;
   color: black;
 }
+
 .autokMenu a {
   font-size: 15px;
 }
@@ -70,6 +76,7 @@ nav a:hover {
   display: none;
   color: black;
 }
+
 .felhasznaloMenu a {
   font-size: 15px;
 }
@@ -99,9 +106,10 @@ nav ul li:hover .felhasznaloMenu {
 /* RESZPONZIVITÁS */
 
 @media only screen and (max-width: 940px) {
-  nav ul{
+  nav ul {
     position: relative;
   }
+
   .header,
   .logo, .hamburger, .mobilNav img, .mobilNav li/* ,
   .autokMenu ul */ {
@@ -302,82 +310,86 @@ nav ul li:hover .felhasznaloMenu {
   .navbar .dd_main.active .dd_menu {
     display: flex;
   }
+}
+/* MÁSODIK NAV SÁV VÉGE */
 
-  /* MÁSODIK NAV SÁV VÉGE */
-
-  @media only screen and (max-width: 800px) {
-    nav ul li,
-    .navbar {
-      display: none;
-      position: relative;
-    }
-    .headerSzoveg {
-      margin: 0;
-      font-size: 0;
-    }
-
-    .mobilNav li {
-      display: contents;
-    }
-    .container {
-      width: 100%;
+@media only screen and (max-width: 800px) {
+  nav ul li,
+  .navbar {
+    display: none;
+    position: relative;
   }
 
-    nav {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+  .headerSzoveg {
+    margin: 0;
+    font-size: 0;
   }
 
-    .hamburger {
-      display: block;
-      width: 35px;
-      cursor: pointer;
-      appearance: none;
-      background: none;
-      outline: none;
-      border: none;
-      z-index: 100;
-    }
+  .mobilNav li {
+    display: contents;
+  }
 
-    .hamburger .bar,
-    .hamburger:after,
-    .hamburger:before {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 5px;
-      background-color: rgb(27, 27, 27);
-      margin: 6px 0px;
-      transition: 0.4s;
-    }
+  .container {
+    width: 100%;
+  }
 
-    .hamburger.is-active:before {
-      transform: rotate(-45deg) translate(-8px, 6px);
-    }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 
-    .hamburger.is-active:after {
-      transform: rotate(45deg) translate(-9px, -8px);
-    }
+  .hamburger {
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 100;
+  }
 
-    .hamburger.is-active .bar {
-      opacity: 0;
-    }
-    .is-active{
-      position: fixed;
-    }
-    .mobilNav {
-      display: none;
-      position: fixed;
-      width: 100%;
-      min-height: 100%;
-      z-index: 98;
-      background-color: #586a85;
-      padding-top: 15%;
-      transition: 0.4s;
-    }
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(27, 27, 27);
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
 
-    /*   .mobilNav {
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+
+  .is-active {
+    position: fixed;
+  }
+
+  .mobilNav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    z-index: 98;
+    background-color: #586a85;
+    padding-top: 15%;
+    transition: 0.4s;
+  }
+
+  /*   .mobilNav {
       margin: 0 auto;
       max-width: 1600px;
       padding-left: 128px;
@@ -396,38 +408,46 @@ nav ul li:hover .felhasznaloMenu {
       transition: top 1s ease;
     } */
 
-    .mobilNav.is-active {
-      display: block;
-      transition: 0.4s;
-    }
+  .mobilNav.is-active {
+    display: block;
+    transition: 0.4s;
+  }
 
-    .mobilNav a {
-      display: block;
-      width: 100%;
-      max-width: 200px;
-      margin: 0 auto 16px;
-      text-align: center;
-      padding: 12px 16px;
-      /* background-color: #586a85; */
+  .mobilNav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    /* background-color: #586a85; */
 
-      color: #fff;
-      font-size: 16pt;
-      text-decoration: none;
-    }
-    .navLista2 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-content: center;
-    }
-    .mobilNav li img {
-      width: 8%;
-    }
-    nav ul {
-      display: none;
-      float: none;
-      margin-right: 0;
-      width: 0px;
-    }
+    color: #fff;
+    font-size: 16pt;
+    text-decoration: none;
+  }
+
+  .navLista2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .mobilNav li img {
+    width: 8%;
+  }
+
+  nav ul {
+    display: none;
+    float: none;
+    margin-right: 0;
+    width: 0px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .marketingContainer {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
