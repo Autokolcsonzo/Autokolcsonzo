@@ -37,141 +37,88 @@
 
 <body>
   <main>
-    <!-- Navigáció -->
-    <nav>
-      <ul>
-        <div class="logo">
-          <img src="../kepek/logo.png" alt="logo" />
-        </div>
-        <li><a href="../index.html">Kezdőlap</a></li>
-        <li>
-            <a href="#">Felhasználó <i class="fa fa-arrow-right"></i></a>
-            <div class="felhasznaloMenu">
-              <ul>
-                <li><a href="felhasznaloiProfil.html">Profilom</a></li>
-                <li><a href="felhasznaloiFoglalasok.html">Foglalásaim</a></li>
-              
-              </ul>
-            </div>
-          </li>
-        <li><a href="#">Rólunk</a></li>
-        <li><a href="#">Feltételek</a></li>
-        
-        <li>
-          <a href="#">Járműveink <i class="fa fa-arrow-right"></i></a>
-          <div class="autokMenu">
-            <ul>
-              <li><a href="../osszesAutoMenubol.html">Összes</a></li>
-              <li><a href="#">Autók</a></li>
-              <li><a href="#">Furgonok</a></li>
-              <li><a href="#">Pickupok</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- <nav class="navbar">
-        <div class="logo">
-          <img src="kepek/logo.png" alt="logo" />
-        </div>
-           <div class="hamburgerMenu">
-             <div class="line line-1"></div>
-             <div class="line line-2"></div>
-             <div class="line line-3"></div>
-            </div>
-            
-            <ul class="navLista">
-            <li class="navElem"><a href="index.html">Kezdőlap</a></li>
-            <li class="navElem"><a class="reszponzivBejelentkezes" href="bejelentkezes.html">Bejelentkezés</a></li>
-            <li class="navElem"><a class="reszponzivBejelentkezes" href="regisztracio.html">Regisztráció</a></li>
-            <li class="navElem"><a href="#">Rólunk</a></li>
-            <li class="navElem"><a href="#">Feltételek</a></li>
-            <li class="navElem">
-              <a href="#">Járműveink <i class="fa fa-arrow-right"></i></a>
-              <div class="autokMenu">
-                <ul>
-                    <div class="logo">
-                        <img src="../kepek/logo.png" alt="logo" />
+    <!-- TABLET, STB. NÉZET -->
+            <div class="wrapper">
+                <div class="navbar">
+                    <div class="reszpGombok">
+                        <a class="reszpBejelentkezes" href="bejelentkezes.html">Bejelentkezés</a>
+                        <a class="reszpRegisztracio" href="regisztracio.html">Regisztráció</a>
                     </div>
-                    <li><a href="../index.html">Kezdőlap</a></li>
-                    <li>
-                        <a href="#">Felhasználó <i class="fa fa-arrow-right"></i></a>
-                        <div class="felhasznaloMenu">
-                            <ul>
-                                <li><a href="felhasznaloiProfil.html">Profilom</a></li>
-                                <li><a href="felhasznaloiFoglalasok.html">Foglalásaim</a></li>
+                    <div class="nav_right">
+                        <ul>
+                            <li class="nr_li dd_main">
+                                <img src="kepek/profile.png" alt="profile_img">
 
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#">Rólunk</a></li>
-                    <li><a href="#">Feltételek</a></li>
+                                <div class="dd_menu">
+                                    <div class="dd_left">
+                                        <ul>
+                                            <li><i class="fas fa-user-circle"></i></li>
+                                            <li><i class="fas fa-clipboard-list"></i></li>
+                                            <li><i class="fas fa-sign-out-alt"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dd_right">
+                                        <ul>
+                                            <li>Profilom</li>
+                                            <li>Foglalásaim</li>
+                                            <li>Logout</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                    <li>
-                        <a href="#">Járműveink <i class="fa fa-arrow-right"></i></a>
-                        <div class="autokMenu">
-                            <ul>
-                                <li><a href="../osszesAutoMenubol.html">Összes</a></li>
-                                <li><a href="#">Autók</a></li>
-                                <li><a href="#">Furgonok</a></li>
-                                <li><a href="#">Pickupok</a></li>
-                            </ul>
+            <!-- ELSŐDLEGES NAV -->
+            <div class="headerSzoveg">
+                <h1 class="reszponzivCim">Keresd meg a számodra megfelelő autót!</h1>
+            </div>
+
+            <nav>
+                <div class="container">
+                    <p class="reszponzivLogo">DropMyRide</p>
+                    <ul>
+                        <div class="logo">
+                            <img src="kepek/logo.png" alt="logo" />
                         </div>
-                    </li>
-                </ul>
+                        <li><a href="index.html">Kezdőlap</a></li>
+                        <li><a href="#">Rólunk</a></li>
+                        <li><a href="#">Feltételek</a></li>              
+                        <li>
+                            <a href="osszesAutoMenubol.html">Járműveink <i class="fa fa-arrow-right"></i></a>
+                            <div class="autokMenu">
+                                <ul>
+                                    <li><a href="osszesAutoMenubol.html">Összes</a></li>
+                                    <li><a href="#">Autók</a></li>
+                                    <li><a href="#">Furgonok</a></li>
+                                    <li><a href="#">Pickupok</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- HAMBI MENÜ GOMB -->
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
             </nav>
 
-            <!-- <nav class="navbar">
-                <div class="logo">
-                  <img src="kepek/logo.png" alt="logo" />
-                </div>
-                   <div class="hamburgerMenu">
-                     <div class="line line-1"></div>
-                     <div class="line line-2"></div>
-                     <div class="line line-3"></div>
-                    </div>
-                    
-                    <ul class="navLista">
-                    <li class="navElem"><a href="index.html">Kezdőlap</a></li>
-                    <li class="navElem"><a class="reszponzivBejelentkezes" href="bejelentkezes.html">Bejelentkezés</a></li>
-                    <li class="navElem"><a class="reszponzivBejelentkezes" href="regisztracio.html">Regisztráció</a></li>
-                    <li class="navElem"><a href="#">Rólunk</a></li>
-                    <li class="navElem"><a href="#">Feltételek</a></li>
-                    <li class="navElem">
-                      <a href="#">Járműveink <i class="fa fa-arrow-right"></i></a>
-                      <div class="autokMenu">
-                        <ul>
-                          <li class="navElem2"><a href="osszesAutoMenubol.html">Összes</a></li>
-                          <li class="navElem2"><a href="#">Autók</a></li>
-                          <li class="navElem2"><a href="#">Furgonok</a></li>
-                          <li class="navElem2"><a href="#">Pickupok</a></li>
-                        </ul>
-                      </div>
-                      <div class="jarmuvekReszponziv"> <!-- csak reszponzivnál jelenik meg -->
-
-            <!--        <ul>
-                   <li class="navElem2"><a href="osszesAutoMenubol.html">Összes</a></li>
-                     <li class="navElem2"><a href="#">Autók</a></li>
-                     <li class="navElem2"><a href="#">Furgonok</a></li>
-                     <li class="navElem2"><a href="#">Pickupok</a></li>
-                 </ul>
-                   </div>
-               </li>
-             </ul>
-       </nav>  -->
-
-
-            <ul>
-                <li class="navElem2"><a href="../osszesAutoMenubol.html">Összes</a></li>
-                <li class="navElem2"><a href="#">Autók</a></li>
-                <li class="navElem2"><a href="#">Furgonok</a></li>
-                <li class="navElem2"><a href="#">Pickupok</a></li>
-            </ul>
-        </div>
-    </li>
-</ul>
-</nav> -->
+            <!-- MOBIL NAV -->
+            <div class="mobilNav">
+                <ul class="navLista2">
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="bejelentkezes.html">Bejelentkezés</a></li>
+                    <li><a href="regisztracio.html">Regisztráció</a></li>
+                    <li><a href="#">Rólunk</a></li>
+                    <li><a href="#">Feltételek</a></li>
+                    <li><a href="#">Járműveink</a></li>
+                    <li>
+                        <img src="kepek/profile.png" alt="profil" />
+                    </li>
+                </ul>
+            </div>
 
 <!--   Fejléc -->
 
