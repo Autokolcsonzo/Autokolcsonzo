@@ -10,9 +10,10 @@
 
 .kereses form {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-end;
   gap: 1rem;
+  
 }
 
 .input-box {
@@ -100,10 +101,12 @@ select {
 }
 #modell_parameter_kereso {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  flex-wrap: nowrap;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
 }
+
 #modell_parameter_kereso section {
   margin-right: 1rem;
   display: flex;
@@ -164,9 +167,9 @@ select {
 }
 #evjarat {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
 #checkboxs,
 #modell_parameter_kereso,
@@ -410,3 +413,17 @@ input[type="checkbox"] {
   width: -webkit-fill-available;
 }
 }
+
+
+@media only screen and (max-width: 600px) {
+#check_wrapper-1, #check_wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 2rem;
+  /* width: 100%; */
+  align-items: center;
+  align-content: center;
+}
+}
+
