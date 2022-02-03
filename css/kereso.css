@@ -167,9 +167,9 @@ select {
 }
 #evjarat {
   display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 #checkboxs,
 #modell_parameter_kereso,
@@ -424,6 +424,12 @@ input[type="checkbox"] {
   /* width: 100%; */
   align-items: center;
   align-content: center;
+}
+#evjarat {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 }
 
