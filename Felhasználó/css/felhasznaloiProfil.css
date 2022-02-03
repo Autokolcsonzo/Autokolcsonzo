@@ -2,7 +2,7 @@
 
 .fadatokTable {
   width: 100%;
-   border-collapse: collapse; 
+  border-collapse: separate;
 }
 
 .fprofil {
@@ -19,9 +19,7 @@
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
   -khtml-box-shadow: 10px 10px 5px #ccc;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin:10px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -36,10 +34,10 @@ background-color: white;
 }
 
 .fadatok {
-  margin-left: 50px;
+ margin:10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-bottom: 50px;
-  padding: 20px;
+  
+  padding: 5px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -53,18 +51,26 @@ background-color: white;
   text-align: left;
   padding: 1em;
   font-weight: bolder;
-  font-size: 20px;
+  
 }
 
 tr :nth-child(1) {
-  color: #17446b;
+  color: #2365a0;
+  font-size: 1,5em;
 }
 
 tr :nth-child(3) {
-  color: #17446b;
+  color: #2365a0;
+  font-size: 1,5em;
 }
 tr :nth-child(2) {
   font-style: italic;
+  font-size:1em;
+}
+
+tr :nth-child(4) {
+  font-style: italic;
+  font-size:1em;
 }
 
 
@@ -85,6 +91,8 @@ tr :nth-child(2) {
 
 #profkepFel{
   display: none;
+  margin: 10px;
+
 }
 
 #fkepMod:hover {
@@ -189,22 +197,56 @@ max-width: 700px;
 
 
 
+@media only screen and (max-width: 700px) {
+  .sor{
+    flex-direction:column; 
+  }
 
-@media only screen and (max-width: 600px) {
-    .sor{
-      flex-direction:column; 
-    }
+  .fadatok{
+    max-width: 100%;
+  }
 
-    .fadatok{
-      max-width: 600px;
-    }
+  .fadatok tr{
+    display: flex;
+    flex-flow: row wrap;
+  }
 
-    .fadatokTable{
-      max-width: 500px;
-    }
+  .fadatok td{
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding:5px;
 
-    .fadatokTable td{
-      padding:10px;
-    }
+  }
+
+
 }
+
+@media only screen and (max-width: 550px) {
+  .sor{
+    flex-direction:column; 
+  }
+
+  .fadatok{
+    max-width: 100%;
+  }
+
+  .fadatok tr{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .fadatok td{
+    flex-grow: 1;
+    flex-basis: 170px;
+   
+
+  }
+
+
+}
+
+
+
+
+
 
