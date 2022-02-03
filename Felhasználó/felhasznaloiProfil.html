@@ -10,7 +10,12 @@
   <!-- Scriptek -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../js/reszponzivDolgok.js"></script>
+  <script src="../js/Ajax.js"></script>
+  <script src="../js/felhasznalo/FelhasznaloProfil.js"></script>
+  <script src="../js/felhasznalo/felhasznaloProfilJs.js"></script>
   <script src="../js/felhasznalo/modosit.js"></script>
+
+  
   <style>
     /* Betűtípusok */
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200&display=swap');
@@ -153,7 +158,7 @@
     <div id="primary_content">
         <div class="fprofil">
             <div class="profilkep">
-                <img src="../kepek/profilkep.png" alt="" /><br>
+                <img src="../kepek/profilkep.png" id="profKep"alt="" /><br>
                 <input type="submit" name="fkepMod" id="fkepMod" value="Profilkép feltöltése" />
                 <input type="file"
        id="profkepFel" name="profilkep"
@@ -215,7 +220,7 @@
                     
                   </tr>
               </table>
-              <input type="button" name="fadatokMod" id="fadatokMod" value="Adatok módosítása" />
+              
 
             </div>
         
