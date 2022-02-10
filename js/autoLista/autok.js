@@ -4,9 +4,9 @@ $(function () {
     const szuloElem = $("#jarmu-lista");
     const sablonElem = $(".jarmu-card");
     let apiVegpont = "http://localhost:3000/autok";
-    autoAjax.getAdat(apiVegpont, autok, autoValasztas);
+    autoAjax.getAdat(apiVegpont, autok, autoFeltoltes);
     
-    function autoValasztas() {
+    function autoFeltoltes() {
       szuloElem.show();
       sablonElem.show();
       autok.forEach(function (elem) {
@@ -15,4 +15,8 @@ $(function () {
       });
       sablonElem.hide();
     }
+
+    //Sortok
+    
+
   });
