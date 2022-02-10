@@ -3,6 +3,7 @@ class AutoAjax {
   
     getAdat(apiVegpont, tomb, myCallback) {
       tomb.splice(0, tomb.length);
+      console.log(apiVegpont);
       $.ajax({
         url: apiVegpont,
         type: "GET",
