@@ -55,6 +55,138 @@
                         "Játék konzol, ","witcher 3, ","Elon Musk bólogató bábú, "
                     ]
         }
+        ,{
+            "autoId": 4,
+            "kep": "./kepek/2018010359.jpg",
+            "marka": "tesla",
+            "modell": "Modell S",
+            "kivitel": "Sport",
+            "valto": "Autómata",
+            "uzemanyag": "Elektromos",
+            "kategoria": "Sport",
+            "ar": 4000,
+            "hetAr": 25000,
+            "helyszin": "Pécs",
+            "ajtok": 4,
+            "utasok": 5,
+            "szin": "Piros",
+            "egyeb": [
+                        "Játék konzol, ","witcher 3, ","Elon Musk bólogató bábú, "
+                    ]
+        }
+        ,{
+            "autoId": 5,
+            "kep": "./kepek/2018010359.jpg",
+            "marka": "tesla",
+            "modell": "Modell S",
+            "kivitel": "Sport",
+            "valto": "Autómata",
+            "uzemanyag": "Elektromos",
+            "kategoria": "Sport",
+            "ar": 4000,
+            "hetAr": 25000,
+            "helyszin": "Pécs",
+            "ajtok": 4,
+            "utasok": 5,
+            "szin": "Piros",
+            "egyeb": [
+                        "Játék konzol, ","witcher 3, ","Elon Musk bólogató bábú, "
+                    ]
+        }
+        ,{
+            "autoId": 6,
+            "kep": "./kepek/2018010359.jpg",
+            "marka": "tesla",
+            "modell": "Modell S",
+            "kivitel": "Sport",
+            "valto": "Autómata",
+            "uzemanyag": "Elektromos",
+            "kategoria": "Sport",
+            "ar": 4000,
+            "hetAr": 25000,
+            "helyszin": "Pécs",
+            "ajtok": 4,
+            "utasok": 5,
+            "szin": "Piros",
+            "egyeb": [
+                        "Játék konzol, ","witcher 3, ","Elon Musk bólogató bábú, "
+                    ]
+        }
+        ,{
+            "autoId": 7,
+            "kep": "./kepek/2018010359.jpg",
+            "marka": "tesla",
+            "modell": "Modell S",
+            "kivitel": "Sport",
+            "valto": "Autómata",
+            "uzemanyag": "Elektromos",
+            "kategoria": "Sport",
+            "ar": 4000,
+            "hetAr": 25000,
+            "helyszin": "Pécs",
+            "ajtok": 4,
+            "utasok": 5,
+            "szin": "Piros",
+            "egyeb": [
+                        "Játék konzol, ","witcher 3, ","Elon Musk bólogató bábú, "
+                    ]
+        }
+        ,{
+            "autoId": 8,
+            "kep": "./kepek/2018010359.jpg",
+            "marka": "tesla",
+            "modell": "Modell S",
+            "kivitel": "Sport",
+            "valto": "Autómata",
+            "uzemanyag": "Elektromos",
+            "kategoria": "Sport",
+            "ar": 4000,
+            "hetAr": 25000,
+            "helyszin": "Pécs",
+            "ajtok": 4,
+            "utasok": 5,
+            "szin": "Piros",
+            "egyeb": [
+                        "Játék konzol, ","witcher 3, ","Elon Musk bólogató bábú, "
+                    ]
+        }
+        ,{
+            "autoId": 9,
+            "kep": "./kepek/2018010359.jpg",
+            "marka": "tesla",
+            "modell": "Modell S",
+            "kivitel": "Sport",
+            "valto": "Autómata",
+            "uzemanyag": "Elektromos",
+            "kategoria": "Sport",
+            "ar": 4000,
+            "hetAr": 25000,
+            "helyszin": "Pécs",
+            "ajtok": 4,
+            "utasok": 5,
+            "szin": "Piros",
+            "egyeb": [
+                        "Játék konzol, ","witcher 3, ","Elon Musk bólogató bábú, "
+                    ]
+        },{
+            "autoId": 10,
+            "kep": "./kepek/2018010359.jpg",
+            "marka": "tesla",
+            "modell": "Modell S",
+            "kivitel": "Sport",
+            "valto": "Autómata",
+            "uzemanyag": "Elektromos",
+            "kategoria": "Sport",
+            "ar": 4000,
+            "hetAr": 25000,
+            "helyszin": "Pécs",
+            "ajtok": 4,
+            "utasok": 5,
+            "szin": "Piros",
+            "egyeb": [
+                        "Játék konzol, ","witcher 3, ","Elon Musk bólogató bábú, "
+                    ]
+        }
     ]
   }
   

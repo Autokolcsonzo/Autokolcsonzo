@@ -19,6 +19,7 @@
     <script src="js/autoLista/autoAjax.js"></script>
     <script src="js/autoLista/auto.js"></script>
     <script src="js/kereso/keresoFeltoltes.js"></script>
+    <script src="js/FoglalasokModal.js"></script>
     <script src="js/autoLista/autok.js"></script>
     <script src="js/cards/autoCard.js"></script>
     <style>
@@ -38,6 +39,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/kereso.css" />
     <link rel="stylesheet" href="css/autoCard.css" />
+    <link rel="stylesheet" href="css/foglalasAblak.css" />
     <link rel="stylesheet" href="css/jarmuTalalatiLista.css" />
 </head>
 
@@ -289,7 +291,60 @@
 
         <!-- felhasználóknak segítség/információ a foglaláshoz -->
         <div id="primary_content">
+            <h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <h1 id="Foglalas-cim">Foglalás leadása</h1>
+    <h1 id="foglalas-bezaras">X</h1>
+    <form action="POST">
+        <section id="valasztott-jarmu-adatok">
+            <img id="valasztott-jarmu-kep" src="kepek\232311_source.jpg" alt="kocsi">
+            <div id="valasztott-jarmu-adatok-wrapp">
+                <section id="valasztott-jarmu-parameterek">
+                    <span id="valasztott-jarmu-marka">BMW</span>
+                    <span id="valasztott-jarmu-modell">X5</span>
+                    <span id="valasztott-jarmu-kivitel">Kombi</span>
+                </section>
+                <span id="valasztott-jarmu-helyszin">Budapest</span>
+            </div>
+            
+        </section>
+        <section id="valasztott-jarmu-ar">
+            <span id="valasztott-jarmu-napiAr">5000</span>
+            <span id="valasztott-jarmu-vegosszeg">35000</span>
+            <span id="valasztott-jarmu-kedvezmeny">20</span>
+        </section>
+        <section id="foglalas-tol-box">
+            <label for="foglalas-tol"></label>
+            <input id="foglalas-tol" name="foglalas-tol" type="date">
+            <input id="foglalas-tol" name="foglalas-tol" type="time">
+        </section>
+        <section id="foglalas-ig-box">
+            <label for="foglalas-ig"></label>
+            <input id="foglalas-ig" name="foglalas-ig" type="date">
+            <input id="foglalas-ig" name="foglalas-ig" type="time"> 
+        </section>
+        <button id="lefoglalas" type="submit">Lefoglalás</button>
+
+        
+    </form>
+  </div>
+
+</div>
+            
+
+
+
+
             <div id="jarmu-lista">
+
                 <div class="jarmu-card" id="">
                     <div class="jarmu-card-img-box">
                         <img class="jarmu-card-kep" src="" alt="">
@@ -333,7 +388,7 @@
 
 
 
-
+        
         </div>
         <!-- Footer -->
         <footer>
